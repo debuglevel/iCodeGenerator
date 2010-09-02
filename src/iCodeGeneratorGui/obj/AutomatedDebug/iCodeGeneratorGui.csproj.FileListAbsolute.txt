@@ -8,3 +8,4 @@ D:\temp\codegenerator\src\iCodeGeneratorGui\obj\AutomatedDebug\iCodeGenerator.iC
 D:\temp\codegenerator\src\iCodeGeneratorGui\obj\AutomatedDebug\iCodeGeneratorGui.csproj.GenerateResource.Cache
 D:\temp\codegenerator\src\iCodeGeneratorGui\obj\AutomatedDebug\iCodeGeneratorGui.exe
 D:\temp\codegenerator\src\iCodeGeneratorGui\obj\AutomatedDebug\iCodeGeneratorGui.pdb
+D:\temp\codegenerator\src\iCodeGeneratorGui\obj\AutomatedDebug\iCodeGenerator.iCodeGeneratorGui.Properties.Resources.resources

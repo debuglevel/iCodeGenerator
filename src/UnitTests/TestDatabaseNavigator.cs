@@ -14,7 +14,7 @@ namespace iCodeGenerator.UnitTests
 		public void SetUp()
 		{
 			Server.ConnectionString = @"SERVER=(local);DATABASE=;UID=sa;PWD=m14m14;";
-			Server.ProviderType = DataProviderType.SqlClient;
+			Server.ProviderType = DataProviderType.MSSQL;
 			_server = new Server();			
 		}
 

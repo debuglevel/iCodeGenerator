@@ -61,7 +61,7 @@ namespace iCodeGenerator.DatabaseStructure
 
 		public Server()
 		{
-			if(_providerType == DataProviderType.SqlClient)
+			if(_providerType == DataProviderType.MSSQL)
 			{
 				_strategy = new DatabaseStrategySQLServer();
 			}

@@ -18,7 +18,7 @@ namespace iCodeGenerator.UnitTests
 		public void SetUp()
 		{
 			Server.ConnectionString = @"SERVER=SAM\NETSDK;DATABASE=;UID=sa;PWD=s4ms4m;";
-			Server.ProviderType = DataProviderType.SqlClient;
+			Server.ProviderType = DataProviderType.MSSQL;
 			Context.StartDelimeter = "{";
 			Context.EndingDelimiter = "}";
 			_parser = new Parser(new Server().Databases[0].Tables[0]);
@@ -191,7 +191,7 @@ LAST{/IF}
 			Client client = new Client();
 			client.CustomValues = hs;
 			Server.ConnectionString = ConnectionStringManager.Instance.GetConnectionStrings()[0];
-			Server.ProviderType = DataProviderType.SqlClient;
+			Server.ProviderType = DataProviderType.MSSQL;
 			client.Parse(new Server().Databases[0].Tables[0],"{NAMESPACE}");
 		}
 		

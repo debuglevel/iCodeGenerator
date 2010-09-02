@@ -67,7 +67,7 @@ namespace iCodeGenerator.GenericDataAccess
 		{
 			switch(providerType)
 			{
-				case DataProviderType.SqlClient:
+				case DataProviderType.MSSQL:
 						return "SERVER=" + server + ";DATABASE=" + database + ";UID=" + username + ";PWD=" + password + ";" ;
 				case DataProviderType.MySql:
 						return 	@"Data Source="+database+";Password="+password+";User ID="+username+";Location="+server+";";

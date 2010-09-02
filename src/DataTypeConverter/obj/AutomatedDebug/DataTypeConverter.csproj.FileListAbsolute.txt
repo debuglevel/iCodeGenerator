@@ -3,3 +3,9 @@ D:\temp\codegenerator\build\Debug\DataTypeConverter\iCodeGenerator.DataTypeConve
 D:\temp\codegenerator\src\DataTypeConverter\obj\AutomatedDebug\ResolveAssemblyReference.cache
 D:\temp\codegenerator\src\DataTypeConverter\obj\AutomatedDebug\iCodeGenerator.DataTypeConverter.dll
 D:\temp\codegenerator\src\DataTypeConverter\obj\AutomatedDebug\iCodeGenerator.DataTypeConverter.pdb
+D:\temp\codegenerator_new\build\Debug\DataTypeConverter\iCodeGenerator.DataTypeConverter.dll
+D:\temp\codegenerator_new\build\Debug\DataTypeConverter\iCodeGenerator.DataTypeConverter.pdb
+D:\temp\codegenerator_new\src\DataTypeConverter\obj\AutomatedDebug\ResolveAssemblyReference.cache
+D:\temp\codegenerator_new\src\DataTypeConverter\obj\AutomatedDebug\iCodeGenerator.DataTypeConverter.dll
+D:\temp\codegenerator_new\src\DataTypeConverter\obj\AutomatedDebug\iCodeGenerator.DataTypeConverter.pdb
+D:\temp\codegenerator_new\build\Debug\DataTypeConverter\DataTypeMapping.xml

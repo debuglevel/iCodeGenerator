@@ -3,3 +3,8 @@ D:\temp\codegenerator\build\Debug\GenericDataAccess\iCodeGenerator.GenericDataAc
 D:\temp\codegenerator\src\GenericDataAccess\obj\AutomatedDebug\ResolveAssemblyReference.cache
 D:\temp\codegenerator\src\GenericDataAccess\obj\AutomatedDebug\iCodeGenerator.GenericDataAccess.dll
 D:\temp\codegenerator\src\GenericDataAccess\obj\AutomatedDebug\iCodeGenerator.GenericDataAccess.pdb
+D:\temp\codegenerator_new\build\Debug\GenericDataAccess\iCodeGenerator.GenericDataAccess.dll
+D:\temp\codegenerator_new\build\Debug\GenericDataAccess\iCodeGenerator.GenericDataAccess.pdb
+D:\temp\codegenerator_new\src\GenericDataAccess\obj\AutomatedDebug\ResolveAssemblyReference.cache
+D:\temp\codegenerator_new\src\GenericDataAccess\obj\AutomatedDebug\iCodeGenerator.GenericDataAccess.dll
+D:\temp\codegenerator_new\src\GenericDataAccess\obj\AutomatedDebug\iCodeGenerator.GenericDataAccess.pdb

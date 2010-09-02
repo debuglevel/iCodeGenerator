@@ -17,7 +17,7 @@ namespace iCodeGenerator.UnitTests
 		public void TestFilenameGenerator()
 		{					
 			Server.ConnectionString = @"SERVER=(local);DATABASE=;UID=sa;PWD=m14m14;";
-			Server.ProviderType = DataProviderType.SqlClient;
+			Server.ProviderType = DataProviderType.MSSQL;
 			Server server = new Server();
 			Client c = new Client();
 			string sd = c.StartDelimiter;

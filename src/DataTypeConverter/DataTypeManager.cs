@@ -27,8 +27,10 @@ namespace iCodeGenerator.DataTypeConverter
 			_Uri = uri;
 			if(DataMappingFileExists())
 			{
-				_Uri = @"C:\temp\" + "DataTypeMapping.xml";
+                throw new DataTypeManagerException("DataTypeMapping.xml not found.");
+                //_Uri = @"C:\temp\" + "DataTypeMapping.xml";
 			}
+
 			try
 			{
 				_Document = new XmlDocument();

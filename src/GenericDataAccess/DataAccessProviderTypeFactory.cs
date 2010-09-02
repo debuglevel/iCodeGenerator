@@ -9,7 +9,7 @@ namespace iCodeGenerator.GenericDataAccess
 {
 	public enum DataProviderType
 	{
-		SqlClient,
+		MSSQL,
 		MySql,
 		Access,
 		PostgresSql,
@@ -68,7 +68,7 @@ namespace iCodeGenerator.GenericDataAccess
 			switch(dataTypeName.ToLower().Trim())
 			{
 				case "sqlclient":
-					_providerType = DataProviderType.SqlClient;
+					_providerType = DataProviderType.MSSQL;
 					break;
 				case "mysql":
 					_providerType = DataProviderType.MySql;

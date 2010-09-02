@@ -319,7 +319,7 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.leftSandDock.LayoutSystem = new TD.SandDock.SplitLayoutSystem(250, 400, System.Windows.Forms.Orientation.Horizontal, new TD.SandDock.LayoutSystemBase[] {
             ((TD.SandDock.LayoutSystemBase)(new TD.SandDock.ControlLayoutSystem(196, 489, new TD.SandDock.DockControl[] {
                         this.uiNavigatorDock,
-                        this.uiSnippets}, this.uiNavigatorDock)))});
+                        this.uiSnippets}, this.uiSnippets)))});
             this.leftSandDock.Location = new System.Drawing.Point(0, 0);
             this.leftSandDock.Manager = this.uiSandDockManager;
             this.leftSandDock.Name = "leftSandDock";
@@ -342,7 +342,7 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.uiNavigatorControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.uiNavigatorControl.Location = new System.Drawing.Point(0, 0);
             this.uiNavigatorControl.Name = "uiNavigatorControl";
-            this.uiNavigatorControl.ProviderType = iCodeGenerator.GenericDataAccess.DataProviderType.SqlClient;
+            this.uiNavigatorControl.ProviderType = iCodeGenerator.GenericDataAccess.DataProviderType.MSSQL;
             this.uiNavigatorControl.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.uiNavigatorControl.Size = new System.Drawing.Size(196, 448);
             this.uiNavigatorControl.TabIndex = 0;

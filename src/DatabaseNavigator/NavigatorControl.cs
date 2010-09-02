@@ -124,7 +124,7 @@ namespace iCodeGenerator.DatabaseNavigator
 			{
 				_rootNode.Nodes.Clear();
 				Server server = new Server();
-				_rootNode.Text = ConnectionString;
+                _rootNode.Text = ProviderType.ToString() + " " + ConnectionString.Split(new char[] { ';' } )[0]; //do not show the whole connection string, because password is included
 				foreach(Database database in server.Databases)
 				{
 					TreeNode databaseNode = new TreeNode(database.Name);

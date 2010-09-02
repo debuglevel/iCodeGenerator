@@ -3,3 +3,8 @@ D:\temp\codegenerator\src\Updater\bin\AutomatedDebug\iCodeGenerator.Updater.pdb
 D:\temp\codegenerator\src\Updater\obj\AutomatedDebug\ResolveAssemblyReference.cache
 D:\temp\codegenerator\src\Updater\obj\AutomatedDebug\iCodeGenerator.Updater.dll
 D:\temp\codegenerator\src\Updater\obj\AutomatedDebug\iCodeGenerator.Updater.pdb
+D:\temp\codegenerator_new\src\Updater\bin\AutomatedDebug\iCodeGenerator.Updater.dll
+D:\temp\codegenerator_new\src\Updater\bin\AutomatedDebug\iCodeGenerator.Updater.pdb
+D:\temp\codegenerator_new\src\Updater\obj\AutomatedDebug\ResolveAssemblyReference.cache
+D:\temp\codegenerator_new\src\Updater\obj\AutomatedDebug\iCodeGenerator.Updater.dll
+D:\temp\codegenerator_new\src\Updater\obj\AutomatedDebug\iCodeGenerator.Updater.pdb

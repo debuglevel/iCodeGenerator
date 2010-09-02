@@ -6,3 +6,11 @@ D:\temp\codegenerator\src\DatabaseNavigator\obj\AutomatedDebug\iCodeGenerator.Da
 D:\temp\codegenerator\src\DatabaseNavigator\obj\AutomatedDebug\DatabaseNavigator.csproj.GenerateResource.Cache
 D:\temp\codegenerator\src\DatabaseNavigator\obj\AutomatedDebug\iCodeGenerator.DatabaseNavigator.dll
 D:\temp\codegenerator\src\DatabaseNavigator\obj\AutomatedDebug\iCodeGenerator.DatabaseNavigator.pdb
+D:\temp\codegenerator_new\build\Debug\DatabaseNavigator\iCodeGenerator.DatabaseNavigator.dll
+D:\temp\codegenerator_new\build\Debug\DatabaseNavigator\iCodeGenerator.DatabaseNavigator.pdb
+D:\temp\codegenerator_new\src\DatabaseNavigator\obj\AutomatedDebug\ResolveAssemblyReference.cache
+D:\temp\codegenerator_new\src\DatabaseNavigator\obj\AutomatedDebug\iCodeGenerator.DatabaseNavigator.NavigatorControl.resources
+D:\temp\codegenerator_new\src\DatabaseNavigator\obj\AutomatedDebug\iCodeGenerator.DatabaseNavigator.ServerSettingsForm.resources
+D:\temp\codegenerator_new\src\DatabaseNavigator\obj\AutomatedDebug\DatabaseNavigator.csproj.GenerateResource.Cache
+D:\temp\codegenerator_new\src\DatabaseNavigator\obj\AutomatedDebug\iCodeGenerator.DatabaseNavigator.dll
+D:\temp\codegenerator_new\src\DatabaseNavigator\obj\AutomatedDebug\iCodeGenerator.DatabaseNavigator.pdb

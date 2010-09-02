@@ -3,3 +3,8 @@ D:\temp\codegenerator\build\Debug\DatabaseStructure\iCodeGenerator.DatabaseStruc
 D:\temp\codegenerator\src\DatabaseStructure\obj\AutomatedDebug\ResolveAssemblyReference.cache
 D:\temp\codegenerator\src\DatabaseStructure\obj\AutomatedDebug\iCodeGenerator.DatabaseStructure.dll
 D:\temp\codegenerator\src\DatabaseStructure\obj\AutomatedDebug\iCodeGenerator.DatabaseStructure.pdb
+D:\temp\codegenerator_new\build\Debug\DatabaseStructure\iCodeGenerator.DatabaseStructure.dll
+D:\temp\codegenerator_new\build\Debug\DatabaseStructure\iCodeGenerator.DatabaseStructure.pdb
+D:\temp\codegenerator_new\src\DatabaseStructure\obj\AutomatedDebug\ResolveAssemblyReference.cache
+D:\temp\codegenerator_new\src\DatabaseStructure\obj\AutomatedDebug\iCodeGenerator.DatabaseStructure.dll
+D:\temp\codegenerator_new\src\DatabaseStructure\obj\AutomatedDebug\iCodeGenerator.DatabaseStructure.pdb

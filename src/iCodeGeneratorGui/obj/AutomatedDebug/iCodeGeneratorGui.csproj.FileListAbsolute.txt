@@ -9,3 +9,15 @@ D:\temp\codegenerator\src\iCodeGeneratorGui\obj\AutomatedDebug\iCodeGeneratorGui
 D:\temp\codegenerator\src\iCodeGeneratorGui\obj\AutomatedDebug\iCodeGeneratorGui.exe
 D:\temp\codegenerator\src\iCodeGeneratorGui\obj\AutomatedDebug\iCodeGeneratorGui.pdb
 D:\temp\codegenerator\src\iCodeGeneratorGui\obj\AutomatedDebug\iCodeGenerator.iCodeGeneratorGui.Properties.Resources.resources
+D:\temp\codegenerator_new\src\iCodeGeneratorGui\obj\AutomatedDebug\iCodeGeneratorGui.exe
+D:\temp\codegenerator_new\src\iCodeGeneratorGui\obj\AutomatedDebug\iCodeGeneratorGui.pdb
+D:\temp\codegenerator_new\build\Debug\iCodeGeneratorGui\iCodeGeneratorGui.exe
+D:\temp\codegenerator_new\build\Debug\iCodeGeneratorGui\iCodeGeneratorGui.pdb
+D:\temp\codegenerator_new\src\iCodeGeneratorGui\obj\AutomatedDebug\ResolveAssemblyReference.cache
+D:\temp\codegenerator_new\src\iCodeGeneratorGui\obj\AutomatedDebug\iCodeGenerator.iCodeGeneratorGui.AboutWindow.resources
+D:\temp\codegenerator_new\src\iCodeGeneratorGui\obj\AutomatedDebug\iCodeGenerator.iCodeGeneratorGui.DirectorySelectionWindow.resources
+D:\temp\codegenerator_new\src\iCodeGeneratorGui\obj\AutomatedDebug\iCodeGenerator.iCodeGeneratorGui.MainWindow.resources
+D:\temp\codegenerator_new\src\iCodeGeneratorGui\obj\AutomatedDebug\iCodeGenerator.iCodeGeneratorGui.Properties.Resources.resources
+D:\temp\codegenerator_new\src\iCodeGeneratorGui\obj\AutomatedDebug\iCodeGenerator.iCodeGeneratorGui.UpdatesWindow.resources
+D:\temp\codegenerator_new\src\iCodeGeneratorGui\obj\AutomatedDebug\iCodeGeneratorGui.csproj.GenerateResource.Cache
+D:\temp\codegenerator_new\build\Debug\iCodeGeneratorGui\DataTypeMapping.xml

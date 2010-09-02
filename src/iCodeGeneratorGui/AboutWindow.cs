@@ -13,6 +13,8 @@ namespace iCodeGenerator.iCodeGeneratorGui
 		private Label label3;
 		private LinkLabel uiCodeGeneratorLink;
         private System.Windows.Forms.Label uiCodeGeneratorLabel;
+        private Label label1;
+        private Label label4;
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
@@ -52,6 +54,8 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.uiCodeGeneratorLink = new System.Windows.Forms.LinkLabel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // uiCodeGeneratorLabel
@@ -66,7 +70,7 @@ namespace iCodeGenerator.iCodeGeneratorGui
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(64, 42);
+            this.label2.Location = new System.Drawing.Point(12, 31);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(144, 23);
             this.label2.TabIndex = 1;
@@ -75,7 +79,7 @@ namespace iCodeGenerator.iCodeGeneratorGui
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(80, 76);
+            this.label3.Location = new System.Drawing.Point(164, 31);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(100, 23);
             this.label3.TabIndex = 2;
@@ -94,11 +98,31 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.uiCodeGeneratorLink.VisitedLinkColor = System.Drawing.Color.Red;
             this.uiCodeGeneratorLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.uiCodeGeneratorLink_LinkClicked);
             // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(12, 54);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(164, 23);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Author: Marc Kohaupt (LOCOM)";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label4
+            // 
+            this.label4.Location = new System.Drawing.Point(180, 54);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(100, 23);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "2010";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // AboutWindow
             // 
             this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(292, 136);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.uiCodeGeneratorLink);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);

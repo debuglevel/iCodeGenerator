@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/6/trunk/src/DatabaseNavigator
+END
+ServerSettingsForm.cs
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/6/trunk/src/DatabaseNavigator/ServerSettingsForm.cs
+END
+AssemblyInfo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/3/trunk/src/DatabaseNavigator/AssemblyInfo.cs
+END
+NavigatorControl.cs
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/3/trunk/src/DatabaseNavigator/NavigatorControl.cs
+END
+ColumnEventArgs.cs
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/3/trunk/src/DatabaseNavigator/ColumnEventArgs.cs
+END
+DatabaseEventArgs.cs
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/3/trunk/src/DatabaseNavigator/DatabaseEventArgs.cs
+END
+TableEventArgs.cs
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/3/trunk/src/DatabaseNavigator/TableEventArgs.cs
+END
+ServerSettingsForm.resx
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/5/trunk/src/DatabaseNavigator/ServerSettingsForm.resx
+END
+NavigatorControl.resx
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/3/trunk/src/DatabaseNavigator/NavigatorControl.resx
+END
+DatabaseNavigator.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/3/trunk/src/DatabaseNavigator/DatabaseNavigator.csproj
+END

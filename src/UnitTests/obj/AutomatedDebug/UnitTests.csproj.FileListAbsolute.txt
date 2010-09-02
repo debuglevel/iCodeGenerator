@@ -1,0 +1,5 @@
+D:\temp\codegenerator\build\Debug\UnitTests\iCodeGenerator.UnitTests.dll
+D:\temp\codegenerator\build\Debug\UnitTests\iCodeGenerator.UnitTests.pdb
+D:\temp\codegenerator\src\UnitTests\obj\AutomatedDebug\ResolveAssemblyReference.cache
+D:\temp\codegenerator\src\UnitTests\obj\AutomatedDebug\iCodeGenerator.UnitTests.dll
+D:\temp\codegenerator\src\UnitTests\obj\AutomatedDebug\iCodeGenerator.UnitTests.pdb

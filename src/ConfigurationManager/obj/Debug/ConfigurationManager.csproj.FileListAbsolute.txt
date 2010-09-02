@@ -1,0 +1,5 @@
+D:\temp\codegenerator\src\ConfigurationManager\bin\Debug\iCodeGenerator.ConfigurationManager.dll
+D:\temp\codegenerator\src\ConfigurationManager\bin\Debug\iCodeGenerator.ConfigurationManager.pdb
+D:\temp\codegenerator\src\ConfigurationManager\obj\Debug\ResolveAssemblyReference.cache
+D:\temp\codegenerator\src\ConfigurationManager\obj\Debug\iCodeGenerator.ConfigurationManager.dll
+D:\temp\codegenerator\src\ConfigurationManager\obj\Debug\iCodeGenerator.ConfigurationManager.pdb

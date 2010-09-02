@@ -1,0 +1,10 @@
+D:\temp\codegenerator\build\Debug\iCodeGeneratorGui\iCodeGeneratorGui.exe
+D:\temp\codegenerator\build\Debug\iCodeGeneratorGui\iCodeGeneratorGui.pdb
+D:\temp\codegenerator\src\iCodeGeneratorGui\obj\AutomatedDebug\ResolveAssemblyReference.cache
+D:\temp\codegenerator\src\iCodeGeneratorGui\obj\AutomatedDebug\iCodeGenerator.iCodeGeneratorGui.AboutWindow.resources
+D:\temp\codegenerator\src\iCodeGeneratorGui\obj\AutomatedDebug\iCodeGenerator.iCodeGeneratorGui.DirectorySelectionWindow.resources
+D:\temp\codegenerator\src\iCodeGeneratorGui\obj\AutomatedDebug\iCodeGenerator.iCodeGeneratorGui.MainWindow.resources
+D:\temp\codegenerator\src\iCodeGeneratorGui\obj\AutomatedDebug\iCodeGenerator.iCodeGeneratorGui.UpdatesWindow.resources
+D:\temp\codegenerator\src\iCodeGeneratorGui\obj\AutomatedDebug\iCodeGeneratorGui.csproj.GenerateResource.Cache
+D:\temp\codegenerator\src\iCodeGeneratorGui\obj\AutomatedDebug\iCodeGeneratorGui.exe
+D:\temp\codegenerator\src\iCodeGeneratorGui\obj\AutomatedDebug\iCodeGeneratorGui.pdb

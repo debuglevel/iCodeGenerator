@@ -1,0 +1,5 @@
+D:\temp\codegenerator\build\Debug\GenericDataAccess\iCodeGenerator.GenericDataAccess.dll
+D:\temp\codegenerator\build\Debug\GenericDataAccess\iCodeGenerator.GenericDataAccess.pdb
+D:\temp\codegenerator\src\GenericDataAccess\obj\AutomatedDebug\ResolveAssemblyReference.cache
+D:\temp\codegenerator\src\GenericDataAccess\obj\AutomatedDebug\iCodeGenerator.GenericDataAccess.dll
+D:\temp\codegenerator\src\GenericDataAccess\obj\AutomatedDebug\iCodeGenerator.GenericDataAccess.pdb

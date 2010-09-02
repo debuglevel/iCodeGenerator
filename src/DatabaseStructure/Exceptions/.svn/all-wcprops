@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/3/trunk/src/DatabaseStructure/Exceptions
+END
+ColumnException.cs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/3/trunk/src/DatabaseStructure/Exceptions/ColumnException.cs
+END
+TableException.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/3/trunk/src/DatabaseStructure/Exceptions/TableException.cs
+END
+KeyException.cs
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/3/trunk/src/DatabaseStructure/Exceptions/KeyException.cs
+END

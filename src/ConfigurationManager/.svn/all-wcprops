@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/11/trunk/src/ConfigurationManager
+END
+AssemblyInfo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/11/trunk/src/ConfigurationManager/AssemblyInfo.cs
+END
+ConfigurationManager.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/11/trunk/src/ConfigurationManager/ConfigurationManager.csproj
+END
+Configuration.xsd
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/11/trunk/src/ConfigurationManager/Configuration.xsd
+END
+Configuration.xml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/11/trunk/src/ConfigurationManager/Configuration.xml
+END
+Configuration.xsx
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/11/trunk/src/ConfigurationManager/Configuration.xsx
+END
+ConfigFile.cs
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/11/trunk/src/ConfigurationManager/ConfigFile.cs
+END
+ConfigFile2.cs
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/11/trunk/src/ConfigurationManager/ConfigFile2.cs
+END
+Configuration.cs
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/11/trunk/src/ConfigurationManager/Configuration.cs
+END

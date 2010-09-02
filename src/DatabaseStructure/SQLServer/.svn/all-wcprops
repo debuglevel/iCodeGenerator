@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/6/trunk/src/DatabaseStructure/SQLServer
+END
+DatabaseStrategySQLServer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/3/trunk/src/DatabaseStructure/SQLServer/DatabaseStrategySQLServer.cs
+END
+TableStrategySQLServer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/6/trunk/src/DatabaseStructure/SQLServer/TableStrategySQLServer.cs
+END
+ColumnStrategySQLServer.cs
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/3/trunk/src/DatabaseStructure/SQLServer/ColumnStrategySQLServer.cs
+END

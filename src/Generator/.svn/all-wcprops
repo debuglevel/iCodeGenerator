@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/svn/!svn/ver/10/trunk/src/Generator
+END
+AssemblyInfo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/3/trunk/src/Generator/AssemblyInfo.cs
+END
+Parser.cs
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/3/trunk/src/Generator/Parser.cs
+END
+Client.cs
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/10/trunk/src/Generator/Client.cs
+END
+Expression.cs
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/3/trunk/src/Generator/Expression.cs
+END
+Generator.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/10/trunk/src/Generator/Generator.csproj
+END
+Context.cs
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/10/trunk/src/Generator/Context.cs
+END
+FileGenerator.cs
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/3/trunk/src/Generator/FileGenerator.cs
+END

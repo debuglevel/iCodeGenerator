@@ -1,0 +1,173 @@
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/svn/!svn/ver/3/trunk/tools/nunit
+END
+mock-assembly.dll
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/3/trunk/tools/nunit/mock-assembly.dll
+END
+nonamespace-assembly.dll
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/3/trunk/tools/nunit/nonamespace-assembly.dll
+END
+nunit-console.exe.config
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/3/trunk/tools/nunit/nunit-console.exe.config
+END
+nunit.mocks.dll
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/3/trunk/tools/nunit/nunit.mocks.dll
+END
+nunit.mocks.tests.dll
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/3/trunk/tools/nunit/nunit.mocks.tests.dll
+END
+nunit.util.dll
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/3/trunk/tools/nunit/nunit.util.dll
+END
+NUnitTests.config
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/3/trunk/tools/nunit/NUnitTests.config
+END
+mock-assembly.dll.config
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/3/trunk/tools/nunit/mock-assembly.dll.config
+END
+nunit.util.tests.dll
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/3/trunk/tools/nunit/nunit.util.tests.dll
+END
+license.html
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/3/trunk/tools/nunit/license.html
+END
+nunit-gui.tests.dll
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/3/trunk/tools/nunit/nunit-gui.tests.dll
+END
+nunit.uikit.dll
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/3/trunk/tools/nunit/nunit.uikit.dll
+END
+nunit.uikit.tests.dll
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/3/trunk/tools/nunit/nunit.uikit.tests.dll
+END
+notestfixtures-assembly.dll
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/3/trunk/tools/nunit/notestfixtures-assembly.dll
+END
+nunit.core.dll
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/3/trunk/tools/nunit/nunit.core.dll
+END
+nunit-gui.exe
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/3/trunk/tools/nunit/nunit-gui.exe
+END
+nunit-gui-runner.dll
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/3/trunk/tools/nunit/nunit-gui-runner.dll
+END
+timing-tests.dll
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/3/trunk/tools/nunit/timing-tests.dll
+END
+test-utilities.dll
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/3/trunk/tools/nunit/test-utilities.dll
+END
+nunit-gui.exe.config
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/3/trunk/tools/nunit/nunit-gui.exe.config
+END
+nunit.framework.dll
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/3/trunk/tools/nunit/nunit.framework.dll
+END
+nunit.framework.tests.dll
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/3/trunk/tools/nunit/nunit.framework.tests.dll
+END
+nunit.extensions.dll
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/3/trunk/tools/nunit/nunit.extensions.dll
+END
+nunit-console.tests.dll
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/3/trunk/tools/nunit/nunit-console.tests.dll
+END
+NUnitTests.nunit
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/3/trunk/tools/nunit/NUnitTests.nunit
+END
+TestResult.xml
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/3/trunk/tools/nunit/TestResult.xml
+END
+nunit-console.exe
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/3/trunk/tools/nunit/nunit-console.exe
+END
+nunit-console-runner.dll
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/3/trunk/tools/nunit/nunit-console-runner.dll
+END

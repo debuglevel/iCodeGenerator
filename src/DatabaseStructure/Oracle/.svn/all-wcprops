@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/6/trunk/src/DatabaseStructure/Oracle
+END
+DatabaseStrategyOracle.cs
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/6/trunk/src/DatabaseStructure/Oracle/DatabaseStrategyOracle.cs
+END
+TableStrategyOracle.cs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/6/trunk/src/DatabaseStructure/Oracle/TableStrategyOracle.cs
+END
+ColumnStrategyOracle.cs
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/6/trunk/src/DatabaseStructure/Oracle/ColumnStrategyOracle.cs
+END

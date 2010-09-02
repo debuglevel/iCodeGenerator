@@ -1,0 +1,5 @@
+D:\temp\codegenerator\build\Debug\Generator\iCodeGenerator.Generator.dll
+D:\temp\codegenerator\build\Debug\Generator\iCodeGenerator.Generator.pdb
+D:\temp\codegenerator\src\Generator\obj\AutomatedDebug\ResolveAssemblyReference.cache
+D:\temp\codegenerator\src\Generator\obj\AutomatedDebug\iCodeGenerator.Generator.dll
+D:\temp\codegenerator\src\Generator\obj\AutomatedDebug\iCodeGenerator.Generator.pdb

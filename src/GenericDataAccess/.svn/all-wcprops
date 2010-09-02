@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/6/trunk/src/GenericDataAccess
+END
+AssemblyInfo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/3/trunk/src/GenericDataAccess/AssemblyInfo.cs
+END
+DataAccessProviderFactory.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/3/trunk/src/GenericDataAccess/DataAccessProviderFactory.cs
+END
+DataAccessProviderTypeFactory.cs
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/6/trunk/src/GenericDataAccess/DataAccessProviderTypeFactory.cs
+END
+ConnectionStringManager.cs
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/3/trunk/src/GenericDataAccess/ConnectionStringManager.cs
+END
+DataAccessProviderInfo.cs
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/6/trunk/src/GenericDataAccess/DataAccessProviderInfo.cs
+END
+GenericDataAccess.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/6/trunk/src/GenericDataAccess/GenericDataAccess.csproj
+END

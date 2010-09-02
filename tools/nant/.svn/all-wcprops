@@ -1,0 +1,191 @@
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/svn/!svn/ver/3/trunk/tools/nant
+END
+NAnt.CompressionTasks.dll
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/3/trunk/tools/nant/NAnt.CompressionTasks.dll
+END
+NAnt.SourceControlTasks.dll
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/3/trunk/tools/nant/NAnt.SourceControlTasks.dll
+END
+NAnt.NUnit1Tasks.xml
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/3/trunk/tools/nant/NAnt.NUnit1Tasks.xml
+END
+NAnt.Core.xml
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/3/trunk/tools/nant/NAnt.Core.xml
+END
+NAnt.MSNetTasks.xml
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/3/trunk/tools/nant/NAnt.MSNetTasks.xml
+END
+NAnt.NUnit1Tasks.dll
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/3/trunk/tools/nant/NAnt.NUnit1Tasks.dll
+END
+scvs.exe
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/3/trunk/tools/nant/scvs.exe
+END
+NAnt.xml
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/3/trunk/tools/nant/NAnt.xml
+END
+NAnt.Core.dll
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/3/trunk/tools/nant/NAnt.Core.dll
+END
+NAnt.MSNetTasks.dll
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/3/trunk/tools/nant/NAnt.MSNetTasks.dll
+END
+NAnt.Win32Tasks.xml
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/3/trunk/tools/nant/NAnt.Win32Tasks.xml
+END
+NAnt.VisualCppTasks.xml
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/3/trunk/tools/nant/NAnt.VisualCppTasks.xml
+END
+NAnt.exe
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/3/trunk/tools/nant/NAnt.exe
+END
+NAnt.Win32Tasks.dll
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/3/trunk/tools/nant/NAnt.Win32Tasks.dll
+END
+NAnt.Resources.dll
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/3/trunk/tools/nant/NAnt.Resources.dll
+END
+NAnt.NUnit2Tasks.xml
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/3/trunk/tools/nant/NAnt.NUnit2Tasks.xml
+END
+NAnt.exe.config
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/3/trunk/tools/nant/NAnt.exe.config
+END
+license.html
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/3/trunk/tools/nant/license.html
+END
+NAnt.VisualCppTasks.dll
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/3/trunk/tools/nant/NAnt.VisualCppTasks.dll
+END
+log4net.dll
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/3/trunk/tools/nant/log4net.dll
+END
+GenerateNAntSchema.build
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/3/trunk/tools/nant/GenerateNAntSchema.build
+END
+NAnt.NUnit.xml
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/3/trunk/tools/nant/NAnt.NUnit.xml
+END
+NAnt.NUnit2Tasks.dll
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/3/trunk/tools/nant/NAnt.NUnit2Tasks.dll
+END
+NDoc.Documenter.NAnt.dll
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/3/trunk/tools/nant/NDoc.Documenter.NAnt.dll
+END
+NAnt.DotNetTasks.xml
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/3/trunk/tools/nant/NAnt.DotNetTasks.xml
+END
+NAnt.VSNetTasks.xml
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/3/trunk/tools/nant/NAnt.VSNetTasks.xml
+END
+NAnt.SourceControlTasks.xml
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/3/trunk/tools/nant/NAnt.SourceControlTasks.xml
+END
+NAnt.CompressionTasks.xml
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/3/trunk/tools/nant/NAnt.CompressionTasks.xml
+END
+NAnt.NUnit.dll
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/3/trunk/tools/nant/NAnt.NUnit.dll
+END
+NAnt.DotNetTasks.dll
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/3/trunk/tools/nant/NAnt.DotNetTasks.dll
+END
+NAnt.VSNetTasks.dll
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/3/trunk/tools/nant/NAnt.VSNetTasks.dll
+END

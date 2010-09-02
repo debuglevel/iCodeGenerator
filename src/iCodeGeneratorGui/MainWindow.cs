@@ -36,41 +36,21 @@ namespace iCodeGenerator.iCodeGeneratorGui
 		private ToolBarContainer leftSandBarDock;
 		private ToolBarContainer rightSandBarDock;
 		private ToolBarContainer bottomSandBarDock;
-		private ToolBarContainer topSandBarDock;
-		private MenuBarItem menuBarItem1;
-		private MenuBarItem menuBarItem2;
-		private MenuBarItem menuBarItem3;
-        private MenuBarItem menuBarItem5;
-		private DockControl uiNavigatorDock;
-		private MenuBar uiMenuBar;
+        private ToolBarContainer topSandBarDock;
+        private DockControl uiNavigatorDock;
 		private ToolBar uiToolBar;
 		private DocumentContainer uiTemplateContainer;
 		private SandDockManager uiSandDockManager;
 		private SandBarManager uiSandBarManager;
 		private DockControl uiTemplateDock;
-		private RichTextBox uiTemplateTextBox;
-		private MenuButtonItem uiExitMenuButton;
+        private RichTextBox uiTemplateTextBox;
 		private NavigatorControl uiNavigatorControl;
 		private ButtonItem uiGenerateButton;
 		private Container components = null;
 		private DockControl uiGenerateCodeDock;
-		private RichTextBox uiGeneratedCodeTextBox;
-		private MenuButtonItem uiCutButton;
-		private MenuButtonItem uiCopyButton;
-		private MenuButtonItem uiPasteButton;
-		private MenuButtonItem uiUndoButton;
-		private MenuButtonItem uiRedoButton;
-		private MenuButtonItem uiViewNavigatorButton;
-		private MenuButtonItem uiViewPropertiesButton;
-		private MenuButtonItem uiAboutButton;
-		private MenuButtonItem uiOpenTemplateButton;
-		private MenuButtonItem uiSaveResultButton;
-		private MenuButtonItem uiSaveTemplateButton;
-		private MenuButtonItem uiSaveAsTemplateButton;
+        private RichTextBox uiGeneratedCodeTextBox;
 		private OpenFileDialog uiOpenTemplateDialog;
-		private SaveFileDialog uiSaveDialog;
-		private MenuBarItem menuBarItem6;
-		private MenuButtonItem uiGenerateCodeButton;
+        private SaveFileDialog uiSaveDialog;
 		private Panel uiPropertiesPanel;
 		private DockControl uiPropertiesDock;
 		private PropertyGrid uiPropertyEditor;
@@ -84,20 +64,13 @@ namespace iCodeGenerator.iCodeGeneratorGui
 		private DataGridTextBoxColumn uiName;
 		private DataGridTextBoxColumn uiValue;
 		private static string _TemplateFilename;
-		private DataSet _CustomValues;
-		private MenuButtonItem uiViewCustomValuesButton;
+        private DataSet _CustomValues;
 		private static string _CustomValuesFilename = AppDomain.CurrentDomain.BaseDirectory + "CustomValues.xml";
 
-		private ButtonItem uiFileGenerator;
-		private MenuButtonItem uiFileGeneratorConfigButton;
-		private MenuButtonItem uiFileGenerateButton;
+        private ButtonItem uiFileGenerator;
 		private static string _InputTemplateFolder = String.Empty;
-		private static string _OutputTemplateFolder = String.Empty;
-		private MenuButtonItem uiOpenOutputFolder;
-		private MenuButtonItem uiOpenConnectionString;
-		private MenuButtonItem uiConnect;
-		private DockControl uiSnippets;
-		private MenuButtonItem uiDisconnect;
+        private static string _OutputTemplateFolder = String.Empty;
+        private DockControl uiSnippets;
 
 		#endregion
         private MenuStrip menuStrip1;
@@ -275,33 +248,6 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.leftSandBarDock = new TD.SandBar.ToolBarContainer();
             this.rightSandBarDock = new TD.SandBar.ToolBarContainer();
             this.topSandBarDock = new TD.SandBar.ToolBarContainer();
-            this.uiMenuBar = new TD.SandBar.MenuBar();
-            this.menuBarItem1 = new TD.SandBar.MenuBarItem();
-            this.uiConnect = new TD.SandBar.MenuButtonItem();
-            this.uiDisconnect = new TD.SandBar.MenuButtonItem();
-            this.uiOpenConnectionString = new TD.SandBar.MenuButtonItem();
-            this.uiOpenTemplateButton = new TD.SandBar.MenuButtonItem();
-            this.uiSaveTemplateButton = new TD.SandBar.MenuButtonItem();
-            this.uiSaveAsTemplateButton = new TD.SandBar.MenuButtonItem();
-            this.uiSaveResultButton = new TD.SandBar.MenuButtonItem();
-            this.uiExitMenuButton = new TD.SandBar.MenuButtonItem();
-            this.menuBarItem2 = new TD.SandBar.MenuBarItem();
-            this.uiUndoButton = new TD.SandBar.MenuButtonItem();
-            this.uiRedoButton = new TD.SandBar.MenuButtonItem();
-            this.uiCutButton = new TD.SandBar.MenuButtonItem();
-            this.uiCopyButton = new TD.SandBar.MenuButtonItem();
-            this.uiPasteButton = new TD.SandBar.MenuButtonItem();
-            this.menuBarItem3 = new TD.SandBar.MenuBarItem();
-            this.uiViewNavigatorButton = new TD.SandBar.MenuButtonItem();
-            this.uiViewPropertiesButton = new TD.SandBar.MenuButtonItem();
-            this.uiViewCustomValuesButton = new TD.SandBar.MenuButtonItem();
-            this.menuBarItem6 = new TD.SandBar.MenuBarItem();
-            this.uiGenerateCodeButton = new TD.SandBar.MenuButtonItem();
-            this.uiFileGeneratorConfigButton = new TD.SandBar.MenuButtonItem();
-            this.uiFileGenerateButton = new TD.SandBar.MenuButtonItem();
-            this.uiOpenOutputFolder = new TD.SandBar.MenuButtonItem();
-            this.menuBarItem5 = new TD.SandBar.MenuBarItem();
-            this.uiAboutButton = new TD.SandBar.MenuButtonItem();
             this.uiToolBar = new TD.SandBar.ToolBar();
             this.uiGenerateButton = new TD.SandBar.ButtonItem();
             this.uiFileGenerator = new TD.SandBar.ButtonItem();
@@ -349,7 +295,6 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.uiCustomValuesDock.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.uiCustomValuesDataGrid)).BeginInit();
             this.rightSandDock.SuspendLayout();
-            this.topSandBarDock.SuspendLayout();
             this.uiTemplateContainer.SuspendLayout();
             this.uiTemplateDock.SuspendLayout();
             this.uiGenerateCodeDock.SuspendLayout();
@@ -368,13 +313,13 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.leftSandDock.Dock = System.Windows.Forms.DockStyle.Left;
             this.leftSandDock.Guid = new System.Guid("4447f9b6-bb46-4444-9654-653e0fac0c75");
             this.leftSandDock.LayoutSystem = new TD.SandDock.SplitLayoutSystem(250, 400, System.Windows.Forms.Orientation.Horizontal, new TD.SandDock.LayoutSystemBase[] {
-            ((TD.SandDock.LayoutSystemBase)(new TD.SandDock.ControlLayoutSystem(196, 542, new TD.SandDock.DockControl[] {
+            ((TD.SandDock.LayoutSystemBase)(new TD.SandDock.ControlLayoutSystem(196, 566, new TD.SandDock.DockControl[] {
                         this.uiNavigatorDock,
                         this.uiSnippets}, this.uiNavigatorDock)))});
-            this.leftSandDock.Location = new System.Drawing.Point(0, 24);
+            this.leftSandDock.Location = new System.Drawing.Point(0, 0);
             this.leftSandDock.Manager = this.uiSandDockManager;
             this.leftSandDock.Name = "leftSandDock";
-            this.leftSandDock.Size = new System.Drawing.Size(200, 542);
+            this.leftSandDock.Size = new System.Drawing.Size(200, 566);
             this.leftSandDock.TabIndex = 2;
             // 
             // uiNavigatorDock
@@ -383,7 +328,7 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.uiNavigatorDock.Guid = new System.Guid("be35efbb-904d-42cd-ab9a-e897e77040b6");
             this.uiNavigatorDock.Location = new System.Drawing.Point(0, 18);
             this.uiNavigatorDock.Name = "uiNavigatorDock";
-            this.uiNavigatorDock.Size = new System.Drawing.Size(196, 501);
+            this.uiNavigatorDock.Size = new System.Drawing.Size(196, 525);
             this.uiNavigatorDock.TabIndex = 0;
             this.uiNavigatorDock.Text = "Navigator";
             // 
@@ -394,7 +339,7 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.uiNavigatorControl.Location = new System.Drawing.Point(0, 0);
             this.uiNavigatorControl.Name = "uiNavigatorControl";
             this.uiNavigatorControl.ProviderType = iCodeGenerator.GenericDataAccess.DataProviderType.SqlClient;
-            this.uiNavigatorControl.Size = new System.Drawing.Size(196, 501);
+            this.uiNavigatorControl.Size = new System.Drawing.Size(196, 525);
             this.uiNavigatorControl.TabIndex = 0;
             this.uiNavigatorControl.TableSelect += new iCodeGenerator.DatabaseNavigator.NavigatorControl.TableEventHandler(this.uiNavigatorControl_TableSelect);
             this.uiNavigatorControl.DatabaseSelect += new iCodeGenerator.DatabaseNavigator.NavigatorControl.DatabaseEventHandler(this.uiNavigatorControl_DatabaseSelect);
@@ -406,7 +351,7 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.uiSnippets.Guid = new System.Guid("a7b3b4f4-8ba9-4862-9b34-5e2c54880aec");
             this.uiSnippets.Location = new System.Drawing.Point(0, 18);
             this.uiSnippets.Name = "uiSnippets";
-            this.uiSnippets.Size = new System.Drawing.Size(196, 501);
+            this.uiSnippets.Size = new System.Drawing.Size(196, 525);
             this.uiSnippets.TabIndex = 1;
             this.uiSnippets.Text = "Snippets";
             this.uiSnippets.Closing += new System.ComponentModel.CancelEventHandler(this.dockControl1_Closing);
@@ -417,7 +362,7 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.uiPropertiesDock.Guid = new System.Guid("4f16c3df-5375-4159-85ae-522ff2daa5b4");
             this.uiPropertiesDock.Location = new System.Drawing.Point(4, 18);
             this.uiPropertiesDock.Name = "uiPropertiesDock";
-            this.uiPropertiesDock.Size = new System.Drawing.Size(196, 228);
+            this.uiPropertiesDock.Size = new System.Drawing.Size(196, 240);
             this.uiPropertiesDock.TabIndex = 1;
             this.uiPropertiesDock.Text = "Properties";
             // 
@@ -427,7 +372,7 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.uiPropertiesPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.uiPropertiesPanel.Location = new System.Drawing.Point(0, 0);
             this.uiPropertiesPanel.Name = "uiPropertiesPanel";
-            this.uiPropertiesPanel.Size = new System.Drawing.Size(196, 228);
+            this.uiPropertiesPanel.Size = new System.Drawing.Size(196, 240);
             this.uiPropertiesPanel.TabIndex = 0;
             // 
             // uiPropertyEditor
@@ -437,7 +382,7 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.uiPropertyEditor.LineColor = System.Drawing.SystemColors.ScrollBar;
             this.uiPropertyEditor.Location = new System.Drawing.Point(0, 0);
             this.uiPropertyEditor.Name = "uiPropertyEditor";
-            this.uiPropertyEditor.Size = new System.Drawing.Size(196, 228);
+            this.uiPropertyEditor.Size = new System.Drawing.Size(196, 240);
             this.uiPropertyEditor.TabIndex = 0;
             this.uiPropertyEditor.ToolbarVisible = false;
             // 
@@ -445,9 +390,9 @@ namespace iCodeGenerator.iCodeGeneratorGui
             // 
             this.uiCustomValuesDock.Controls.Add(this.uiCustomValuesDataGrid);
             this.uiCustomValuesDock.Guid = new System.Guid("efe8850a-621c-48c4-a603-1a963b397082");
-            this.uiCustomValuesDock.Location = new System.Drawing.Point(4, 291);
+            this.uiCustomValuesDock.Location = new System.Drawing.Point(4, 303);
             this.uiCustomValuesDock.Name = "uiCustomValuesDock";
-            this.uiCustomValuesDock.Size = new System.Drawing.Size(196, 228);
+            this.uiCustomValuesDock.Size = new System.Drawing.Size(196, 240);
             this.uiCustomValuesDock.TabIndex = 2;
             this.uiCustomValuesDock.Text = "Custom Values";
             this.uiCustomValuesDock.Leave += new System.EventHandler(this.uiCustomValuesDock_Leave);
@@ -462,7 +407,7 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.uiCustomValuesDataGrid.Name = "uiCustomValuesDataGrid";
             this.uiCustomValuesDataGrid.PreferredColumnWidth = 125;
             this.uiCustomValuesDataGrid.RowHeadersVisible = false;
-            this.uiCustomValuesDataGrid.Size = new System.Drawing.Size(196, 228);
+            this.uiCustomValuesDataGrid.Size = new System.Drawing.Size(196, 240);
             this.uiCustomValuesDataGrid.TabIndex = 0;
             this.uiCustomValuesDataGrid.TableStyles.AddRange(new System.Windows.Forms.DataGridTableStyle[] {
             this.uiCustomValuesGridStyle});
@@ -498,14 +443,14 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.rightSandDock.Dock = System.Windows.Forms.DockStyle.Right;
             this.rightSandDock.Guid = new System.Guid("5a7c170b-4aad-4827-bf24-de523a3bac08");
             this.rightSandDock.LayoutSystem = new TD.SandDock.SplitLayoutSystem(250, 400, System.Windows.Forms.Orientation.Horizontal, new TD.SandDock.LayoutSystemBase[] {
-            ((TD.SandDock.LayoutSystemBase)(new TD.SandDock.ControlLayoutSystem(196, 269, new TD.SandDock.DockControl[] {
+            ((TD.SandDock.LayoutSystemBase)(new TD.SandDock.ControlLayoutSystem(196, 281, new TD.SandDock.DockControl[] {
                         this.uiPropertiesDock}, this.uiPropertiesDock))),
-            ((TD.SandDock.LayoutSystemBase)(new TD.SandDock.ControlLayoutSystem(196, 269, new TD.SandDock.DockControl[] {
+            ((TD.SandDock.LayoutSystemBase)(new TD.SandDock.ControlLayoutSystem(196, 281, new TD.SandDock.DockControl[] {
                         this.uiCustomValuesDock}, this.uiCustomValuesDock)))});
-            this.rightSandDock.Location = new System.Drawing.Point(592, 24);
+            this.rightSandDock.Location = new System.Drawing.Point(592, 0);
             this.rightSandDock.Manager = this.uiSandDockManager;
             this.rightSandDock.Name = "rightSandDock";
-            this.rightSandDock.Size = new System.Drawing.Size(200, 542);
+            this.rightSandDock.Size = new System.Drawing.Size(200, 566);
             this.rightSandDock.TabIndex = 3;
             // 
             // bottomSandDock
@@ -524,7 +469,7 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.topSandDock.Dock = System.Windows.Forms.DockStyle.Top;
             this.topSandDock.Guid = new System.Guid("24d50ee0-b600-4b52-a431-7e9715efbf6d");
             this.topSandDock.LayoutSystem = new TD.SandDock.SplitLayoutSystem(250, 400);
-            this.topSandDock.Location = new System.Drawing.Point(0, 24);
+            this.topSandDock.Location = new System.Drawing.Point(0, 0);
             this.topSandDock.Manager = this.uiSandDockManager;
             this.topSandDock.Name = "topSandDock";
             this.topSandDock.Size = new System.Drawing.Size(792, 0);
@@ -550,209 +495,29 @@ namespace iCodeGenerator.iCodeGeneratorGui
             // leftSandBarDock
             // 
             this.leftSandBarDock.Dock = System.Windows.Forms.DockStyle.Left;
-            this.leftSandBarDock.Location = new System.Drawing.Point(0, 24);
+            this.leftSandBarDock.Location = new System.Drawing.Point(0, 0);
             this.leftSandBarDock.Manager = this.uiSandBarManager;
             this.leftSandBarDock.Name = "leftSandBarDock";
-            this.leftSandBarDock.Size = new System.Drawing.Size(0, 542);
+            this.leftSandBarDock.Size = new System.Drawing.Size(0, 566);
             this.leftSandBarDock.TabIndex = 6;
             // 
             // rightSandBarDock
             // 
             this.rightSandBarDock.Dock = System.Windows.Forms.DockStyle.Right;
-            this.rightSandBarDock.Location = new System.Drawing.Point(792, 24);
+            this.rightSandBarDock.Location = new System.Drawing.Point(792, 0);
             this.rightSandBarDock.Manager = this.uiSandBarManager;
             this.rightSandBarDock.Name = "rightSandBarDock";
-            this.rightSandBarDock.Size = new System.Drawing.Size(0, 542);
+            this.rightSandBarDock.Size = new System.Drawing.Size(0, 566);
             this.rightSandBarDock.TabIndex = 7;
             // 
             // topSandBarDock
             // 
-            this.topSandBarDock.Controls.Add(this.uiMenuBar);
             this.topSandBarDock.Dock = System.Windows.Forms.DockStyle.Top;
             this.topSandBarDock.Location = new System.Drawing.Point(0, 0);
             this.topSandBarDock.Manager = this.uiSandBarManager;
             this.topSandBarDock.Name = "topSandBarDock";
-            this.topSandBarDock.Size = new System.Drawing.Size(792, 24);
+            this.topSandBarDock.Size = new System.Drawing.Size(792, 0);
             this.topSandBarDock.TabIndex = 9;
-            // 
-            // uiMenuBar
-            // 
-            this.uiMenuBar.Buttons.AddRange(new TD.SandBar.ToolbarItemBase[] {
-            this.menuBarItem1,
-            this.menuBarItem2,
-            this.menuBarItem3,
-            this.menuBarItem6,
-            this.menuBarItem5});
-            this.uiMenuBar.Enabled = false;
-            this.uiMenuBar.Guid = new System.Guid("6230f6dc-3087-4a3d-9ed3-eabccee99562");
-            this.uiMenuBar.Location = new System.Drawing.Point(2, 0);
-            this.uiMenuBar.Name = "uiMenuBar";
-            this.uiMenuBar.Size = new System.Drawing.Size(790, 24);
-            this.uiMenuBar.TabIndex = 0;
-            this.uiMenuBar.Visible = false;
-            // 
-            // menuBarItem1
-            // 
-            this.menuBarItem1.MenuItems.AddRange(new TD.SandBar.MenuButtonItem[] {
-            this.uiConnect,
-            this.uiDisconnect,
-            this.uiOpenConnectionString,
-            this.uiOpenTemplateButton,
-            this.uiSaveTemplateButton,
-            this.uiSaveAsTemplateButton,
-            this.uiSaveResultButton,
-            this.uiExitMenuButton});
-            this.menuBarItem1.Text = "&File";
-            // 
-            // uiConnect
-            // 
-            this.uiConnect.Text = "&Connect";
-            this.uiConnect.Activate += new System.EventHandler(this.uiConnect_Activate);
-            // 
-            // uiDisconnect
-            // 
-            this.uiDisconnect.Text = "&Disconnect";
-            this.uiDisconnect.Activate += new System.EventHandler(this.uiDisconnect_Activate);
-            // 
-            // uiOpenConnectionString
-            // 
-            this.uiOpenConnectionString.Text = "Confi&gure Connection";
-            this.uiOpenConnectionString.Activate += new System.EventHandler(this.uiOpenConnectionString_Activate);
-            // 
-            // uiOpenTemplateButton
-            // 
-            this.uiOpenTemplateButton.BeginGroup = true;
-            this.uiOpenTemplateButton.Text = "&Open Template";
-            this.uiOpenTemplateButton.Activate += new System.EventHandler(this.uiOpenTemplateButton_Activate);
-            // 
-            // uiSaveTemplateButton
-            // 
-            this.uiSaveTemplateButton.Enabled = false;
-            this.uiSaveTemplateButton.Text = "&Save Template";
-            this.uiSaveTemplateButton.Activate += new System.EventHandler(this.uiSaveTemplateButton_Activate);
-            // 
-            // uiSaveAsTemplateButton
-            // 
-            this.uiSaveAsTemplateButton.Text = "Save &As Template";
-            this.uiSaveAsTemplateButton.Activate += new System.EventHandler(this.uiSaveAsTemplateButton_Activate);
-            // 
-            // uiSaveResultButton
-            // 
-            this.uiSaveResultButton.Text = "Save Result";
-            this.uiSaveResultButton.Activate += new System.EventHandler(this.uiSaveResultButton_Activate);
-            // 
-            // uiExitMenuButton
-            // 
-            this.uiExitMenuButton.Text = "E&xit";
-            this.uiExitMenuButton.Activate += new System.EventHandler(this.uiExitMenuButton_Activate);
-            // 
-            // menuBarItem2
-            // 
-            this.menuBarItem2.MenuItems.AddRange(new TD.SandBar.MenuButtonItem[] {
-            this.uiUndoButton,
-            this.uiRedoButton,
-            this.uiCutButton,
-            this.uiCopyButton,
-            this.uiPasteButton});
-            this.menuBarItem2.Text = "&Edit";
-            // 
-            // uiUndoButton
-            // 
-            this.uiUndoButton.Shortcut = System.Windows.Forms.Shortcut.CtrlZ;
-            this.uiUndoButton.Text = "&Undo";
-            this.uiUndoButton.Activate += new System.EventHandler(this.uiUndoButton_Activate);
-            // 
-            // uiRedoButton
-            // 
-            this.uiRedoButton.Shortcut = System.Windows.Forms.Shortcut.CtrlY;
-            this.uiRedoButton.Text = "&Redo";
-            this.uiRedoButton.Activate += new System.EventHandler(this.uiRedoButton_Activate);
-            // 
-            // uiCutButton
-            // 
-            this.uiCutButton.BeginGroup = true;
-            this.uiCutButton.Shortcut = System.Windows.Forms.Shortcut.CtrlX;
-            this.uiCutButton.Text = "Cu&t";
-            this.uiCutButton.Activate += new System.EventHandler(this.uiCutButton_Activate);
-            // 
-            // uiCopyButton
-            // 
-            this.uiCopyButton.Shortcut = System.Windows.Forms.Shortcut.CtrlC;
-            this.uiCopyButton.Text = "&Copy";
-            this.uiCopyButton.Activate += new System.EventHandler(this.uiCopyButton_Activate);
-            // 
-            // uiPasteButton
-            // 
-            this.uiPasteButton.Shortcut = System.Windows.Forms.Shortcut.CtrlV;
-            this.uiPasteButton.Text = "&Paste";
-            this.uiPasteButton.Activate += new System.EventHandler(this.uiPasteButton_Activate);
-            // 
-            // menuBarItem3
-            // 
-            this.menuBarItem3.MenuItems.AddRange(new TD.SandBar.MenuButtonItem[] {
-            this.uiViewNavigatorButton,
-            this.uiViewPropertiesButton,
-            this.uiViewCustomValuesButton});
-            this.menuBarItem3.Text = "&View";
-            // 
-            // uiViewNavigatorButton
-            // 
-            this.uiViewNavigatorButton.Text = "Navigator";
-            this.uiViewNavigatorButton.Activate += new System.EventHandler(this.uiViewNavigatorButton_Activate);
-            // 
-            // uiViewPropertiesButton
-            // 
-            this.uiViewPropertiesButton.Text = "Properties";
-            this.uiViewPropertiesButton.Activate += new System.EventHandler(this.uiViewPropertiesButton_Activate);
-            // 
-            // uiViewCustomValuesButton
-            // 
-            this.uiViewCustomValuesButton.Text = "Custom Values";
-            this.uiViewCustomValuesButton.Activate += new System.EventHandler(this.uiViewCustomValuesButton_Activate);
-            // 
-            // menuBarItem6
-            // 
-            this.menuBarItem6.MenuItems.AddRange(new TD.SandBar.MenuButtonItem[] {
-            this.uiGenerateCodeButton,
-            this.uiFileGeneratorConfigButton,
-            this.uiFileGenerateButton,
-            this.uiOpenOutputFolder});
-            this.menuBarItem6.Text = "&Generator";
-            // 
-            // uiGenerateCodeButton
-            // 
-            this.uiGenerateCodeButton.Shortcut = System.Windows.Forms.Shortcut.CtrlG;
-            this.uiGenerateCodeButton.Text = "Generate Code";
-            this.uiGenerateCodeButton.Activate += new System.EventHandler(this.uiGenerateCodeButton_Activate);
-            // 
-            // uiFileGeneratorConfigButton
-            // 
-            this.uiFileGeneratorConfigButton.BeginGroup = true;
-            this.uiFileGeneratorConfigButton.Text = "File Generator Configuration";
-            this.uiFileGeneratorConfigButton.Activate += new System.EventHandler(this.uiFileGeneratorConfigButton_Activate);
-            // 
-            // uiFileGenerateButton
-            // 
-            this.uiFileGenerateButton.Shortcut = System.Windows.Forms.Shortcut.CtrlF;
-            this.uiFileGenerateButton.Text = "File Generate";
-            this.uiFileGenerateButton.Activate += new System.EventHandler(this.uiFileGenerateButton_Activate);
-            // 
-            // uiOpenOutputFolder
-            // 
-            this.uiOpenOutputFolder.Shortcut = System.Windows.Forms.Shortcut.CtrlO;
-            this.uiOpenOutputFolder.Text = "Open Output Folder";
-            this.uiOpenOutputFolder.Activate += new System.EventHandler(this.uiOpenOutputFolder_Activate);
-            // 
-            // menuBarItem5
-            // 
-            this.menuBarItem5.MenuItems.AddRange(new TD.SandBar.MenuButtonItem[] {
-            this.uiAboutButton});
-            this.menuBarItem5.Text = "&Help";
-            // 
-            // uiAboutButton
-            // 
-            this.uiAboutButton.Text = "&About...";
-            this.uiAboutButton.Activate += new System.EventHandler(this.uiAboutButton_Activate);
             // 
             // uiToolBar
             // 
@@ -763,7 +528,7 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.uiToolBar.DockLine = 1;
             this.uiToolBar.DrawActionsButton = false;
             this.uiToolBar.Guid = new System.Guid("699b1d0f-d336-4759-8097-bfbb67d31c66");
-            this.uiToolBar.Location = new System.Drawing.Point(200, 48);
+            this.uiToolBar.Location = new System.Drawing.Point(200, 24);
             this.uiToolBar.Name = "uiToolBar";
             this.uiToolBar.Size = new System.Drawing.Size(392, 26);
             this.uiToolBar.TabIndex = 1;
@@ -794,13 +559,13 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.uiTemplateContainer.Cursor = System.Windows.Forms.Cursors.Default;
             this.uiTemplateContainer.Guid = new System.Guid("e2d7d100-338b-414b-a8f5-696d61a3348a");
             this.uiTemplateContainer.LayoutSystem = new TD.SandDock.SplitLayoutSystem(250, 400, System.Windows.Forms.Orientation.Horizontal, new TD.SandDock.LayoutSystemBase[] {
-            ((TD.SandDock.LayoutSystemBase)(new TD.SandDock.DocumentLayoutSystem(390, 468, new TD.SandDock.DockControl[] {
+            ((TD.SandDock.LayoutSystemBase)(new TD.SandDock.DocumentLayoutSystem(390, 492, new TD.SandDock.DockControl[] {
                         this.uiTemplateDock,
                         this.uiGenerateCodeDock}, this.uiTemplateDock)))});
-            this.uiTemplateContainer.Location = new System.Drawing.Point(200, 74);
+            this.uiTemplateContainer.Location = new System.Drawing.Point(200, 50);
             this.uiTemplateContainer.Manager = null;
             this.uiTemplateContainer.Name = "uiTemplateContainer";
-            this.uiTemplateContainer.Size = new System.Drawing.Size(392, 470);
+            this.uiTemplateContainer.Size = new System.Drawing.Size(392, 494);
             this.uiTemplateContainer.TabIndex = 10;
             // 
             // uiTemplateDock
@@ -810,7 +575,7 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.uiTemplateDock.Guid = new System.Guid("6065db1e-e6bf-4209-8cb9-03c7805d045a");
             this.uiTemplateDock.Location = new System.Drawing.Point(3, 23);
             this.uiTemplateDock.Name = "uiTemplateDock";
-            this.uiTemplateDock.Size = new System.Drawing.Size(386, 444);
+            this.uiTemplateDock.Size = new System.Drawing.Size(386, 468);
             this.uiTemplateDock.TabIndex = 0;
             this.uiTemplateDock.Text = "Template";
             // 
@@ -821,7 +586,7 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.uiTemplateTextBox.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uiTemplateTextBox.Location = new System.Drawing.Point(0, 0);
             this.uiTemplateTextBox.Name = "uiTemplateTextBox";
-            this.uiTemplateTextBox.Size = new System.Drawing.Size(386, 444);
+            this.uiTemplateTextBox.Size = new System.Drawing.Size(386, 468);
             this.uiTemplateTextBox.TabIndex = 0;
             this.uiTemplateTextBox.Text = "";
             // 
@@ -1066,7 +831,7 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.viewToolStripMenuItem,
             this.generatorToolStripMenuItem,
             this.helpToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(200, 24);
+            this.menuStrip1.Location = new System.Drawing.Point(200, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(392, 24);
             this.menuStrip1.TabIndex = 1;
@@ -1107,7 +872,6 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.uiCustomValuesDock.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.uiCustomValuesDataGrid)).EndInit();
             this.rightSandDock.ResumeLayout(false);
-            this.topSandBarDock.ResumeLayout(false);
             this.uiTemplateContainer.ResumeLayout(false);
             this.uiTemplateDock.ResumeLayout(false);
             this.uiGenerateCodeDock.ResumeLayout(false);
@@ -1322,7 +1086,8 @@ namespace iCodeGenerator.iCodeGeneratorGui
 			{
 				_TemplateFilename = uiOpenTemplateDialog.FileName;
 				uiTemplateTextBox.LoadFile(_TemplateFilename, RichTextBoxStreamType.PlainText);
-				uiSaveTemplateButton.Enabled = true;
+
+                saveTemplateToolStripMenuItem.Enabled = true;
 			}
 		}
 

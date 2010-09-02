@@ -123,13 +123,19 @@
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>44</value>
   </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="uiGenerateButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        R0lGODlhEAAQAIEAAP///1JSsQAAAAAAACH/C05FVFNDQVBFMi4wAwEBAAAh+QQAAAAAACwAAAAAEAAQ
+        AAAILAABCBxIsKDBgwgTKlxIMADDgQEcPowocSHFigkvYjx4kSHFiRszPhxJkmRAADs=
+</value>
+  </data>
   <metadata name="menuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>757, 17</value>
   </metadata>
   <metadata name="uiSandBarManager.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>170, 17</value>
   </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAAAABMLAAATCwAAAAAAAAAA
@@ -152,12 +158,6 @@
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABw1vIVRcbtg1W73q9hvNsfAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAA5+P//4GA//8AAP//AAD//wAA//8AAP//AAH//8AH///wD///8A////AP///wD///8A////AP
         ///8P////n///w==
-</value>
-  </data>
-  <data name="uiGenerateButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        R0lGODlhEAAQAIEAAP///1JSsQAAAAAAACH/C05FVFNDQVBFMi4wAwEBAAAh+QQAAAAAACwAAAAAEAAQ
-        AAAILAABCBxIsKDBgwgTKlxIMADDgQEcPowocSHFigkvYjx4kSHFiRszPhxJkmRAADs=
 </value>
   </data>
   <metadata name="uiOpenTemplateDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">

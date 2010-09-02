@@ -65,7 +65,22 @@ namespace iCodeGenerator.Generator
 					Debug.WriteLine(e);
 				}
 			}
-			CompleteNotifier(new EventArgs());
+            //CompleteNotifier(new EventArgs());
 		}
+
+        public void Generate(Table[] tables, string inputDir, string baseOutputDir)
+        {
+            foreach (Table table in tables)
+            {
+                String specificOutputDir = baseOutputDir + Path.DirectorySeparatorChar + table.Name;
+                if (Directory.Exists(specificOutputDir) == false)
+                {
+                    Directory.CreateDirectory(specificOutputDir);
+                }
+
+                Generate(table, inputDir, specificOutputDir);
+            }
+            CompleteNotifier(new EventArgs());
+        }
 	}
 }

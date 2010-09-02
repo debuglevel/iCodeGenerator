@@ -138,6 +138,7 @@
     <Compile Include="DatabaseEventArgs.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="TablesEventArgs.cs" />
     <Compile Include="NavigatorControl.cs">
       <SubType>UserControl</SubType>
     </Compile>

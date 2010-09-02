@@ -3,6 +3,7 @@ using System.ComponentModel;
 using System.Windows.Forms;
 using iCodeGenerator.GenericDataAccess;
 using iCodeGenerator.DatabaseStructure;
+using System.Collections.Generic;
 //using TD.SandBar;
 
 namespace iCodeGenerator.DatabaseNavigator
@@ -375,6 +376,16 @@ namespace iCodeGenerator.DatabaseNavigator
 			{
 				SetTableMenu();
 				OnTableSelect(new TableEventArgs((Table) uiNavigatorTreeView.SelectedNode.Tag));
+
+                List<Table> tables = new List<Table>();
+                foreach (TreeNode node in uiNavigatorTreeView.SelectedNodes)
+                {
+                    if (node.Tag.GetType() == typeof(Table))
+                    {
+                        tables.Add((Table)node.Tag);
+                    }
+                }
+                OnTablesSelect(new TablesEventArgs(tables.ToArray()));
 			}
 			else if( obj.GetType() == typeof(Column) )
 			{
@@ -449,6 +460,18 @@ namespace iCodeGenerator.DatabaseNavigator
 				TableSelect(this,args);
 			}
 		}
+
+        public delegate void TablesEventHandler(object sender, TablesEventArgs args);
+
+        [Browsable(true), Category("Navigator")]
+        public event TablesEventHandler TablesSelect;
+        protected virtual void OnTablesSelect(TablesEventArgs args)
+        {
+            if (TablesSelect != null)
+            {
+                TablesSelect(this, args);
+            }
+        }
 		
 		
 		// Database Events & Delegates

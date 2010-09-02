@@ -195,11 +195,13 @@ namespace iCodeGenerator.iCodeGeneratorGui
 		{
 			MainWindow.InputTemplateFolder = uiInputFolderSelectedTextBox.Text.Trim();
 			MainWindow.OutputTemplateFolder = uiOutputFolderSelectedTextBox.Text.Trim();
-			Close();
+            this.DialogResult = DialogResult.OK;
+            Close();
 		}
 
 		private void uiCancelButton_Click(object sender, EventArgs e)
 		{
+            this.DialogResult = DialogResult.Cancel;
 			Close();
 		}
 	}

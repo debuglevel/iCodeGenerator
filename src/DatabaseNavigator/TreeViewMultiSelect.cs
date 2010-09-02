@@ -78,7 +78,7 @@ namespace iCodeGenerator.DatabaseNavigator
 
         protected override void OnAfterSelect(TreeViewEventArgs e)
         {
-            base.OnAfterSelect(e);
+            //base.OnAfterSelect(e);
 
             bool bControl = (ModifierKeys == Keys.Control);
             bool bShift = (ModifierKeys == Keys.Shift);
@@ -179,6 +179,9 @@ namespace iCodeGenerator.DatabaseNavigator
                     m_coll.Add(e.Node);
                 }
             }
+
+            //Events should be fired after we filled our nodes
+            base.OnAfterSelect(e);
         }
 
 

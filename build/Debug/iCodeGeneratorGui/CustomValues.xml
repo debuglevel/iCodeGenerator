@@ -1,2 +1,7 @@
 <?xml version="1.0" standalone="yes"?>
-<NewDataSet />
+<NewDataSet>
+  <Table1>
+    <Name>NAMESPACE</Name>
+    <Value>Locom</Value>
+  </Table1>
+</NewDataSet>

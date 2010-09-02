@@ -49,6 +49,7 @@ namespace iCodeGenerator.iCodeGeneratorGui
 		private DockControl uiPropertiesDock;
         private PropertyGrid uiPropertyEditor;
 		private static Table selectedTable = null;
+        private static Table[] selectedTables = null;
 		private OpenFileDialog uiOpenMergeDialog;
 		private DataGrid uiCustomValuesDataGrid;
 		private DockControl uiCustomValuesDock;
@@ -228,6 +229,7 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.uiSandDockManager = new TD.SandDock.SandDockManager();
             this.leftSandDock = new TD.SandDock.DockContainer();
             this.uiNavigatorDock = new TD.SandDock.DockControl();
+            this.uiNavigatorControl = new iCodeGenerator.DatabaseNavigator.NavigatorControl();
             this.uiSnippets = new TD.SandDock.DockControl();
             this.uiPropertiesDock = new TD.SandDock.DockControl();
             this.uiPropertiesPanel = new System.Windows.Forms.Panel();
@@ -283,7 +285,6 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
             this.uiStatusStrip = new System.Windows.Forms.StatusStrip();
-            this.uiNavigatorControl = new iCodeGenerator.DatabaseNavigator.NavigatorControl();
             this.leftSandDock.SuspendLayout();
             this.uiNavigatorDock.SuspendLayout();
             this.uiPropertiesDock.SuspendLayout();
@@ -334,6 +335,22 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.uiNavigatorDock.Size = new System.Drawing.Size(196, 448);
             this.uiNavigatorDock.TabIndex = 0;
             this.uiNavigatorDock.Text = "Navigator";
+            // 
+            // uiNavigatorControl
+            // 
+            this.uiNavigatorControl.ConnectionString = "";
+            this.uiNavigatorControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uiNavigatorControl.Location = new System.Drawing.Point(0, 0);
+            this.uiNavigatorControl.Name = "uiNavigatorControl";
+            this.uiNavigatorControl.ProviderType = iCodeGenerator.GenericDataAccess.DataProviderType.SqlClient;
+            this.uiNavigatorControl.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.uiNavigatorControl.Size = new System.Drawing.Size(196, 448);
+            this.uiNavigatorControl.TabIndex = 0;
+            this.uiNavigatorControl.TableSelect += new iCodeGenerator.DatabaseNavigator.NavigatorControl.TableEventHandler(this.uiNavigatorControl_TableSelect);
+            this.uiNavigatorControl.TablesSelect += new iCodeGenerator.DatabaseNavigator.NavigatorControl.TablesEventHandler(this.uiNavigatorControl_TablesSelect);
+            this.uiNavigatorControl.DatabaseSelect += new iCodeGenerator.DatabaseNavigator.NavigatorControl.DatabaseEventHandler(this.uiNavigatorControl_DatabaseSelect);
+            this.uiNavigatorControl.ColumnSelect += new iCodeGenerator.DatabaseNavigator.NavigatorControl.ColumnEventHandler(this.uiNavigatorControl_ColumnSelect);
+            this.uiNavigatorControl.ColumnShowProperties += new iCodeGenerator.DatabaseNavigator.NavigatorControl.ColumnEventHandler(this.uiNavigatorControl_ColumnShowProperties);
             // 
             // uiSnippets
             // 
@@ -511,6 +528,7 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.uiGenerateCodeDock.Size = new System.Drawing.Size(380, 463);
             this.uiGenerateCodeDock.TabIndex = 1;
             this.uiGenerateCodeDock.Text = "Generated Code";
+            this.uiGenerateCodeDock.Enter += new System.EventHandler(this.uiGenerateCodeButton_Activate);
             // 
             // uiGeneratedCodeTextBox
             // 
@@ -853,20 +871,6 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.uiStatusStrip.TabIndex = 1;
             this.uiStatusStrip.Text = "statusStrip1";
             // 
-            // uiNavigatorControl
-            // 
-            this.uiNavigatorControl.ConnectionString = "";
-            this.uiNavigatorControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uiNavigatorControl.Location = new System.Drawing.Point(0, 0);
-            this.uiNavigatorControl.Name = "uiNavigatorControl";
-            this.uiNavigatorControl.ProviderType = iCodeGenerator.GenericDataAccess.DataProviderType.SqlClient;
-            this.uiNavigatorControl.Size = new System.Drawing.Size(196, 448);
-            this.uiNavigatorControl.TabIndex = 0;
-            this.uiNavigatorControl.TableSelect += new iCodeGenerator.DatabaseNavigator.NavigatorControl.TableEventHandler(this.uiNavigatorControl_TableSelect);
-            this.uiNavigatorControl.DatabaseSelect += new iCodeGenerator.DatabaseNavigator.NavigatorControl.DatabaseEventHandler(this.uiNavigatorControl_DatabaseSelect);
-            this.uiNavigatorControl.ColumnSelect += new iCodeGenerator.DatabaseNavigator.NavigatorControl.ColumnEventHandler(this.uiNavigatorControl_ColumnSelect);
-            this.uiNavigatorControl.ColumnShowProperties += new iCodeGenerator.DatabaseNavigator.NavigatorControl.ColumnEventHandler(this.uiNavigatorControl_ColumnShowProperties);
-            // 
             // MainWindow
             // 
             this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
@@ -925,6 +929,23 @@ namespace iCodeGenerator.iCodeGeneratorGui
 			                   args.Table.Name;
 			uiPropertyEditor.SelectedObject = args.Table;
 		}
+
+        private void uiNavigatorControl_TablesSelect(object sender, TablesEventArgs args)
+        {
+            selectedTables = args.Tables;
+
+            uiStatusStrip.Text = "";
+
+            foreach (Table table in selectedTables)
+            {
+                uiStatusStrip.Text += table.ParentDatabase.Name + " > " +
+                                   table.Name + " & ";
+            }
+
+
+            //uiPropertyEditor.SelectedObject = args.Table;
+            uiPropertyEditor.SelectedObjects = args.Tables;
+        }
 
 		private void uiNavigatorControl_ColumnSelect(object sender, ColumnEventArgs args)
 		{
@@ -1223,13 +1244,13 @@ namespace iCodeGenerator.iCodeGeneratorGui
 
 		private void uiFileGeneratorConfigButton_Activate(object sender, EventArgs e)
 		{
-			SelectTemplatesDirectory();
+			SelectDirectories();
 		}
 
-		private void SelectTemplatesDirectory()
+		private DialogResult SelectDirectories()
 		{
 			DirectorySelectionWindow selectionWindow = new DirectorySelectionWindow();
-			selectionWindow.ShowDialog(this);
+			return selectionWindow.ShowDialog(this);
 		}
 
 		private void uiFileGenerateButton_Activate(object sender, EventArgs e)
@@ -1239,6 +1260,14 @@ namespace iCodeGenerator.iCodeGeneratorGui
 
 		private void GenerateFiles()
 		{
+            while ((IsValidFolder(_InputTemplateFolder) && IsValidFolder(_OutputTemplateFolder)) == false)
+            {
+                if (SelectDirectories() != DialogResult.OK)
+                {
+                    break;
+                }
+            }
+
 			if (IsValidFolder(_InputTemplateFolder) && IsValidFolder(_OutputTemplateFolder))
 			{
 				try
@@ -1246,23 +1275,21 @@ namespace iCodeGenerator.iCodeGeneratorGui
 					FileGenerator generator = new FileGenerator();
 					generator.OnComplete += new EventHandler(fileGenerator_Completed);
 					generator.CustomValue = GetCustomValues();
-					generator.Generate(selectedTable, _InputTemplateFolder, _OutputTemplateFolder);
+                    //generator.Generate(selectedTable, _InputTemplateFolder, _OutputTemplateFolder);
+                    generator.Generate(selectedTables, _InputTemplateFolder, _OutputTemplateFolder);
 				}
 				catch (Exception e)
 				{
 					MessageBox.Show(e.Message);
 				}
 			}
-			else
-			{
-				SelectTemplatesDirectory();
-			}
+
 		}
 
 		private void fileGenerator_Completed(object sender, EventArgs e)
 		{
             uiStatusStrip.Text = "File Generation Completed";
-			MessageBox.Show("File Generation Completed");
+            MessageBox.Show("File Generation Completed");
 		}
 
 		private void uiOpenOutputFolder_Activate(object sender, EventArgs e)
@@ -1273,7 +1300,7 @@ namespace iCodeGenerator.iCodeGeneratorGui
 			}
 			else
 			{
-				SelectTemplatesDirectory();
+				SelectDirectories();
 			}
 		}
 

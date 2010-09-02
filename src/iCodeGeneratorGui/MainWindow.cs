@@ -74,7 +74,7 @@ namespace iCodeGenerator.iCodeGeneratorGui
 
 		#endregion
         private MenuStrip menuStrip1;
-        private ToolStripMenuItem fIleToolStripMenuItem;
+        private ToolStripMenuItem fileToolStripMenuItem;
         private ToolStripMenuItem connectToolStripMenuItem;
         private ToolStripMenuItem disconnectToolStripMenuItem;
         private ToolStripMenuItem configureCOnnectionToolStripMenuItem;
@@ -260,7 +260,7 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.uiOpenTemplateDialog = new System.Windows.Forms.OpenFileDialog();
             this.uiSaveDialog = new System.Windows.Forms.SaveFileDialog();
             this.uiOpenMergeDialog = new System.Windows.Forms.OpenFileDialog();
-            this.fIleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.connectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.disconnectToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.configureCOnnectionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -354,7 +354,6 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.uiSnippets.Size = new System.Drawing.Size(196, 525);
             this.uiSnippets.TabIndex = 1;
             this.uiSnippets.Text = "Snippets";
-            this.uiSnippets.Closing += new System.ComponentModel.CancelEventHandler(this.dockControl1_Closing);
             // 
             // uiPropertiesDock
             // 
@@ -617,9 +616,9 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.uiOpenTemplateDialog.Filter = "All Files|*.*|Text Files|*.txt";
             this.uiOpenTemplateDialog.Title = "Open Template";
             // 
-            // fIleToolStripMenuItem
+            // fileToolStripMenuItem
             // 
-            this.fIleToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fileToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.connectToolStripMenuItem,
             this.disconnectToolStripMenuItem,
             this.configureCOnnectionToolStripMenuItem,
@@ -628,10 +627,9 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.saveAsTemplateToolStripMenuItem,
             this.saveResultToolStripMenuItem,
             this.exitToolStripMenuItem});
-            this.fIleToolStripMenuItem.Name = "fIleToolStripMenuItem";
-            this.fIleToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
-            this.fIleToolStripMenuItem.Text = "File";
-            this.fIleToolStripMenuItem.Click += new System.EventHandler(this.fIleToolStripMenuItem_Click);
+            this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
+            this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
+            this.fileToolStripMenuItem.Text = "File";
             // 
             // connectToolStripMenuItem
             // 
@@ -826,7 +824,7 @@ namespace iCodeGenerator.iCodeGeneratorGui
             // 
             this.menuStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fIleToolStripMenuItem,
+            this.fileToolStripMenuItem,
             this.editToolStripMenuItem,
             this.viewToolStripMenuItem,
             this.generatorToolStripMenuItem,
@@ -836,7 +834,6 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.menuStrip1.Size = new System.Drawing.Size(392, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
-            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // uiStatusBar
             // 
@@ -1275,19 +1272,5 @@ namespace iCodeGenerator.iCodeGeneratorGui
 		{
 			uiNavigatorControl.Disconnect();
 		}
-
-		private void dockControl1_Closing(object sender, CancelEventArgs e)
-		{
-		}
-
-        private void fIleToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-        {
-
-        }
 	}
 }

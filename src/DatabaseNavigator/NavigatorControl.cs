@@ -3,7 +3,7 @@ using System.ComponentModel;
 using System.Windows.Forms;
 using iCodeGenerator.GenericDataAccess;
 using iCodeGenerator.DatabaseStructure;
-using TD.SandBar;
+//using TD.SandBar;
 
 namespace iCodeGenerator.DatabaseNavigator
 {
@@ -24,9 +24,10 @@ namespace iCodeGenerator.DatabaseNavigator
 		private TreeView uiNavigatorTreeView;
 		private IContainer components;
 
-		private ShortcutListener _shortcuts = null;
-		private MenuBar _menuBar = null;
-		private ContextMenuBarItem _contextMenu = null;
+        //private ShortcutListener _shortcuts = null;
+        //private MenuBar _menuBar = null;
+        //private ContextMenuBarItem _contextMenu = null;
+        private ContextMenuStrip _contextMenuStrip = null;
 		private ImageList uiNavigatorImageList;
 
 		private TreeNode _rootNode;
@@ -65,34 +66,60 @@ namespace iCodeGenerator.DatabaseNavigator
 
 		private void InitializeMenu()
 		{
-			_shortcuts = new ShortcutListener();
-			_menuBar = new MenuBar();
+            //_shortcuts = new ShortcutListener();
+            //_menuBar = new MenuBar();
 			
-	
 			SetDefaultMenu();
-			_shortcuts.UpdateAcceleratorTable(new TopLevelMenuItemBase[] { _contextMenu });
+            this.uiNavigatorTreeView.ContextMenuStrip = _contextMenuStrip;
+
+            //_shortcuts.UpdateAcceleratorTable(new TopLevelMenuItemBase[] { _contextMenu });
 	
-			_menuBar.Buttons.Add(_contextMenu);
-			_menuBar.SetSandBarMenu(this, _contextMenu);
+            //_menuBar.Buttons.Add(_contextMenu);
+            //_menuBar.SetSandBarMenu(this, _contextMenu);
 		}
+
+
+        void NavigatorControl_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button != MouseButtons.Right)
+                return;
+
+            _contextMenuStrip.Show();
+        }
 
 
 		// Server Activate
 		private void SetDefaultMenu()
 		{
-			if(_contextMenu == null)
-			{
-				_contextMenu = new ContextMenuBarItem();
-			}
-			_contextMenu.MenuItems.Clear();
-			MenuButtonItem connect = new MenuButtonItem("Connect");
-			connect.Activate += new EventHandler(connect_Activate);
-			MenuButtonItem disconnect = new MenuButtonItem("Disconnect");
-			disconnect.Activate += new EventHandler(disconnect_Activate);
-			MenuButtonItem edit = new MenuButtonItem("Edit");
-			edit.Activate += new EventHandler(serverEdit_Activate);
-			_contextMenu.MenuItems.AddRange(new MenuButtonItem[] { connect, edit, disconnect });
-			//contextMenu.MenuItems[1].Shortcut = Shortcut.CtrlJ;
+            //if (_contextMenu == null)
+            //{
+            //    _contextMenu = new ContextMenuBarItem();
+            //}
+            if (_contextMenuStrip == null)
+            {
+                _contextMenuStrip = new ContextMenuStrip();
+            }
+            //_contextMenu.MenuItems.Clear();
+            _contextMenuStrip.Items.Clear();
+            //MenuButtonItem connect = new MenuButtonItem("Connect");
+            //connect.Activate += new EventHandler(connect_Activate);
+            ToolStripItem connect = new ToolStripMenuItem("Connect");
+            connect.Click += new EventHandler(connect_Activate);
+
+            //MenuButtonItem disconnect = new MenuButtonItem("Disconnect");
+            //disconnect.Activate += new EventHandler(disconnect_Activate);
+            ToolStripItem disconnect = new ToolStripMenuItem("Disconnect");
+            disconnect.Click += new EventHandler(disconnect_Activate);
+
+            //MenuButtonItem edit = new MenuButtonItem("Edit");
+            //edit.Activate += new EventHandler(serverEdit_Activate);
+            ToolStripItem edit = new ToolStripMenuItem("Edit");
+            edit.Click += new EventHandler(serverEdit_Activate);
+			
+
+            //_contextMenu.MenuItems.AddRange(new MenuButtonItem[] { connect, edit, disconnect });
+            _contextMenuStrip.Items.AddRange(new ToolStripItem[] { connect, edit, disconnect });
+
 		}
 
 		private void connect_Activate(object sender, EventArgs e)
@@ -155,10 +182,14 @@ namespace iCodeGenerator.DatabaseNavigator
 		// Database Activate
 		private void SetDatabaseMenu()
 		{
-			_contextMenu.MenuItems.Clear();
-			MenuButtonItem open = new MenuButtonItem("Open");
-			open.Activate += new EventHandler(databaseOpen_Activate);
-			_contextMenu.MenuItems.AddRange(new MenuButtonItem[] { open });
+            //_contextMenu.MenuItems.Clear();
+            _contextMenuStrip.Items.Clear();
+            //MenuButtonItem open = new MenuButtonItem("Open");
+            //open.Activate += new EventHandler(databaseOpen_Activate);
+            ToolStripItem open = new ToolStripMenuItem("Open");
+            open.Click += new EventHandler(databaseOpen_Activate);
+            //_contextMenu.MenuItems.AddRange(new MenuButtonItem[] { open });
+            _contextMenuStrip.Items.AddRange(new ToolStripItem[] { open });
 		}
 
 		private void databaseOpen_Activate(object sender, EventArgs e)
@@ -200,10 +231,14 @@ namespace iCodeGenerator.DatabaseNavigator
 		// Table Activate
 		private void SetTableMenu()
 		{
-			_contextMenu.MenuItems.Clear();
-			MenuButtonItem open = new MenuButtonItem("Open");
-			open.Activate += new EventHandler(tableOpen_Activate);
-			_contextMenu.MenuItems.AddRange( new MenuButtonItem[] { open } );
+            //_contextMenu.MenuItems.Clear();
+            _contextMenuStrip.Items.Clear();
+            //MenuButtonItem open = new MenuButtonItem("Open");
+            //open.Activate += new EventHandler(tableOpen_Activate);
+            ToolStripItem open = new ToolStripMenuItem("Open");
+            open.Click += new EventHandler(tableOpen_Activate);
+            //_contextMenu.MenuItems.AddRange( new MenuButtonItem[] { open } );
+            _contextMenuStrip.Items.AddRange(new ToolStripItem[] { open });
 		}
 
 		private void tableOpen_Activate(object sender, EventArgs e)
@@ -228,12 +263,19 @@ namespace iCodeGenerator.DatabaseNavigator
 		// Column Activate
 		private void SetColumnMenu()
 		{
-			_contextMenu.MenuItems.Clear();
-			MenuButtonItem remove = new MenuButtonItem("Remove");
-			remove.Activate += new EventHandler(columnRemove_Activate);
-			MenuButtonItem showProperties = new MenuButtonItem("Properties");
-			showProperties.Activate += new EventHandler(columnShowProperties);
-			_contextMenu.MenuItems.AddRange( new MenuButtonItem[] { remove,showProperties } );
+
+            //_contextMenu.MenuItems.Clear();
+            //MenuButtonItem remove = new MenuButtonItem("Remove");
+            //remove.Activate += new EventHandler(columnRemove_Activate);
+            //MenuButtonItem showProperties = new MenuButtonItem("Properties");
+            //showProperties.Activate += new EventHandler(columnShowProperties);
+
+            _contextMenuStrip.Items.Clear();
+            ToolStripItem remove = new ToolStripMenuItem("Remove");
+            remove.Click += new EventHandler(columnRemove_Activate);
+            ToolStripItem showProperties = new ToolStripMenuItem("Properties");
+            showProperties.Click += new EventHandler(columnShowProperties);
+            _contextMenuStrip.Items.AddRange(new ToolStripItem[] { remove, showProperties });
 		}
 
 		private void columnShowProperties(object sender, EventArgs e)
@@ -253,8 +295,8 @@ namespace iCodeGenerator.DatabaseNavigator
 
 		protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
 		{
-			if(_shortcuts.ShortcutActivated(keyData))
-				return true;
+            //if(_shortcuts.ShortcutActivated(keyData))
+            //    return true;
 
 			return base.ProcessCmdKey (ref msg, keyData);
 		}
@@ -267,9 +309,9 @@ namespace iCodeGenerator.DatabaseNavigator
 				{
 					components.Dispose();
 				}
-				_shortcuts.Dispose();
-				_menuBar.SetSandBarMenu(this,null);
-				_menuBar.Dispose();
+                //_shortcuts.Dispose();
+                //_menuBar.SetSandBarMenu(this,null);
+                //_menuBar.Dispose();
 			}
 			base.Dispose( disposing );
 		}
@@ -282,36 +324,43 @@ namespace iCodeGenerator.DatabaseNavigator
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.components = new System.ComponentModel.Container();
-			System.Resources.ResourceManager resources = new System.Resources.ResourceManager(typeof(NavigatorControl));
-			this.uiNavigatorTreeView = new System.Windows.Forms.TreeView();
-			this.uiNavigatorImageList = new System.Windows.Forms.ImageList(this.components);
-			this.SuspendLayout();
-			// 
-			// uiNavigatorTreeView
-			// 
-			this.uiNavigatorTreeView.Dock = System.Windows.Forms.DockStyle.Fill;
-			this.uiNavigatorTreeView.ImageList = this.uiNavigatorImageList;
-			this.uiNavigatorTreeView.Location = new System.Drawing.Point(0, 0);
-			this.uiNavigatorTreeView.Name = "uiNavigatorTreeView";
-			this.uiNavigatorTreeView.Size = new System.Drawing.Size(150, 150);
-			this.uiNavigatorTreeView.TabIndex = 0;
-			this.uiNavigatorTreeView.KeyUp += new System.Windows.Forms.KeyEventHandler(this.uiNavigatorTreeView_KeyUp);
-			this.uiNavigatorTreeView.DoubleClick += new System.EventHandler(this.uiNavigatorTreeView_DoubleClick);
-			this.uiNavigatorTreeView.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.uiNavigatorTreeView_AfterSelect);
-			// 
-			// uiNavigatorImageList
-			// 
-			this.uiNavigatorImageList.ImageSize = new System.Drawing.Size(16, 16);
-			this.uiNavigatorImageList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("uiNavigatorImageList.ImageStream")));
-			this.uiNavigatorImageList.TransparentColor = System.Drawing.Color.Transparent;
-			// 
-			// NavigatorControl
-			// 
-			this.Controls.Add(this.uiNavigatorTreeView);
-			this.Name = "NavigatorControl";
-			this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.uiNavigatorTreeView_KeyUp);
-			this.ResumeLayout(false);
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NavigatorControl));
+            this.uiNavigatorTreeView = new System.Windows.Forms.TreeView();
+            this.uiNavigatorImageList = new System.Windows.Forms.ImageList(this.components);
+            this.SuspendLayout();
+            // 
+            // uiNavigatorTreeView
+            // 
+            this.uiNavigatorTreeView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uiNavigatorTreeView.ImageIndex = 0;
+            this.uiNavigatorTreeView.ImageList = this.uiNavigatorImageList;
+            this.uiNavigatorTreeView.Location = new System.Drawing.Point(0, 0);
+            this.uiNavigatorTreeView.Name = "uiNavigatorTreeView";
+            this.uiNavigatorTreeView.SelectedImageIndex = 0;
+            this.uiNavigatorTreeView.Size = new System.Drawing.Size(150, 150);
+            this.uiNavigatorTreeView.TabIndex = 0;
+            this.uiNavigatorTreeView.DoubleClick += new System.EventHandler(this.uiNavigatorTreeView_DoubleClick);
+            this.uiNavigatorTreeView.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.uiNavigatorTreeView_AfterSelect);
+            this.uiNavigatorTreeView.KeyUp += new System.Windows.Forms.KeyEventHandler(this.uiNavigatorTreeView_KeyUp);
+            // 
+            // uiNavigatorImageList
+            // 
+            this.uiNavigatorImageList.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("uiNavigatorImageList.ImageStream")));
+            this.uiNavigatorImageList.TransparentColor = System.Drawing.Color.Transparent;
+            this.uiNavigatorImageList.Images.SetKeyName(0, "");
+            this.uiNavigatorImageList.Images.SetKeyName(1, "");
+            this.uiNavigatorImageList.Images.SetKeyName(2, "");
+            this.uiNavigatorImageList.Images.SetKeyName(3, "");
+            this.uiNavigatorImageList.Images.SetKeyName(4, "");
+            this.uiNavigatorImageList.Images.SetKeyName(5, "");
+            // 
+            // NavigatorControl
+            // 
+            this.Controls.Add(this.uiNavigatorTreeView);
+            this.Name = "NavigatorControl";
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.uiNavigatorTreeView_KeyUp);
+            this.ResumeLayout(false);
 
 		}
 		#endregion

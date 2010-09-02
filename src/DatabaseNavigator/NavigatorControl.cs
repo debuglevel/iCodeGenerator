@@ -78,16 +78,6 @@ namespace iCodeGenerator.DatabaseNavigator
             //_menuBar.SetSandBarMenu(this, _contextMenu);
 		}
 
-
-        void NavigatorControl_MouseClick(object sender, MouseEventArgs e)
-        {
-            if (e.Button != MouseButtons.Right)
-                return;
-
-            _contextMenuStrip.Show();
-        }
-
-
 		// Server Activate
 		private void SetDefaultMenu()
 		{

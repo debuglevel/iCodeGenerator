@@ -1,0 +1,9 @@
+ConnectionStrings.txt
+*.obj
+*.dll
+*.pdb
+*.cache
+*.exe
+*.Cache
+*.resources
+*/obj

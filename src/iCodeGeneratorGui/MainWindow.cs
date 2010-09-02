@@ -38,14 +38,12 @@ namespace iCodeGenerator.iCodeGeneratorGui
 		private ToolBarContainer bottomSandBarDock;
         private ToolBarContainer topSandBarDock;
         private DockControl uiNavigatorDock;
-		private ToolBar uiToolBar;
 		private DocumentContainer uiTemplateContainer;
 		private SandDockManager uiSandDockManager;
 		private SandBarManager uiSandBarManager;
 		private DockControl uiTemplateDock;
         private RichTextBox uiTemplateTextBox;
-		private NavigatorControl uiNavigatorControl;
-		private ButtonItem uiGenerateButton;
+        private NavigatorControl uiNavigatorControl;
 		private Container components = null;
 		private DockControl uiGenerateCodeDock;
         private RichTextBox uiGeneratedCodeTextBox;
@@ -53,8 +51,7 @@ namespace iCodeGenerator.iCodeGeneratorGui
         private SaveFileDialog uiSaveDialog;
 		private Panel uiPropertiesPanel;
 		private DockControl uiPropertiesDock;
-		private PropertyGrid uiPropertyEditor;
-		private ButtonItem uiMergeButton;
+        private PropertyGrid uiPropertyEditor;
 		private static Table selectedTable = null;
 		private OpenFileDialog uiOpenMergeDialog;
 		private DataGrid uiCustomValuesDataGrid;
@@ -65,15 +62,13 @@ namespace iCodeGenerator.iCodeGeneratorGui
 		private DataGridTextBoxColumn uiValue;
 		private static string _TemplateFilename;
         private DataSet _CustomValues;
-		private static string _CustomValuesFilename = AppDomain.CurrentDomain.BaseDirectory + "CustomValues.xml";
-
-        private ButtonItem uiFileGenerator;
+        private static string _CustomValuesFilename = AppDomain.CurrentDomain.BaseDirectory + "CustomValues.xml";
 		private static string _InputTemplateFolder = String.Empty;
         private static string _OutputTemplateFolder = String.Empty;
         private DockControl uiSnippets;
 
 		#endregion
-        private MenuStrip menuStrip1;
+        private MenuStrip uiMenuStrip;
         private ToolStripMenuItem fileToolStripMenuItem;
         private ToolStripMenuItem connectToolStripMenuItem;
         private ToolStripMenuItem disconnectToolStripMenuItem;
@@ -101,6 +96,10 @@ namespace iCodeGenerator.iCodeGeneratorGui
         private ToolStripMenuItem helpToolStripMenuItem;
         private ToolStripMenuItem aboutToolStripMenuItem;
         private StatusBar uiStatusBar;
+        private ToolStrip uiToolStrip;
+        private ToolStripButton tsGenerateCode;
+        private ToolStripButton tsGenerateFile;
+        private ToolStripButton tsGenerateMerge;
 
 
 
@@ -248,10 +247,6 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.leftSandBarDock = new TD.SandBar.ToolBarContainer();
             this.rightSandBarDock = new TD.SandBar.ToolBarContainer();
             this.topSandBarDock = new TD.SandBar.ToolBarContainer();
-            this.uiToolBar = new TD.SandBar.ToolBar();
-            this.uiGenerateButton = new TD.SandBar.ButtonItem();
-            this.uiFileGenerator = new TD.SandBar.ButtonItem();
-            this.uiMergeButton = new TD.SandBar.ButtonItem();
             this.uiTemplateContainer = new TD.SandDock.DocumentContainer();
             this.uiTemplateDock = new TD.SandDock.DockControl();
             this.uiTemplateTextBox = new System.Windows.Forms.RichTextBox();
@@ -286,8 +281,12 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.openOutputFolderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.uiMenuStrip = new System.Windows.Forms.MenuStrip();
             this.uiStatusBar = new System.Windows.Forms.StatusBar();
+            this.uiToolStrip = new System.Windows.Forms.ToolStrip();
+            this.tsGenerateCode = new System.Windows.Forms.ToolStripButton();
+            this.tsGenerateFile = new System.Windows.Forms.ToolStripButton();
+            this.tsGenerateMerge = new System.Windows.Forms.ToolStripButton();
             this.leftSandDock.SuspendLayout();
             this.uiNavigatorDock.SuspendLayout();
             this.uiPropertiesDock.SuspendLayout();
@@ -298,7 +297,8 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.uiTemplateContainer.SuspendLayout();
             this.uiTemplateDock.SuspendLayout();
             this.uiGenerateCodeDock.SuspendLayout();
-            this.menuStrip1.SuspendLayout();
+            this.uiMenuStrip.SuspendLayout();
+            this.uiToolStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // uiSandDockManager
@@ -518,39 +518,6 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.topSandBarDock.Size = new System.Drawing.Size(792, 0);
             this.topSandBarDock.TabIndex = 9;
             // 
-            // uiToolBar
-            // 
-            this.uiToolBar.Buttons.AddRange(new TD.SandBar.ToolbarItemBase[] {
-            this.uiGenerateButton,
-            this.uiFileGenerator,
-            this.uiMergeButton});
-            this.uiToolBar.DockLine = 1;
-            this.uiToolBar.DrawActionsButton = false;
-            this.uiToolBar.Guid = new System.Guid("699b1d0f-d336-4759-8097-bfbb67d31c66");
-            this.uiToolBar.Location = new System.Drawing.Point(200, 24);
-            this.uiToolBar.Name = "uiToolBar";
-            this.uiToolBar.Size = new System.Drawing.Size(392, 26);
-            this.uiToolBar.TabIndex = 1;
-            this.uiToolBar.Text = "toolBar1";
-            // 
-            // uiGenerateButton
-            // 
-            this.uiGenerateButton.Image = ((System.Drawing.Image)(resources.GetObject("uiGenerateButton.Image")));
-            this.uiGenerateButton.Text = "Generate";
-            this.uiGenerateButton.ToolTipText = "Generate Code";
-            this.uiGenerateButton.Activate += new System.EventHandler(this.uiGenerateButton_Activate);
-            // 
-            // uiFileGenerator
-            // 
-            this.uiFileGenerator.Text = "File Generate";
-            this.uiFileGenerator.Activate += new System.EventHandler(this.uiFileGenerator_Activate);
-            // 
-            // uiMergeButton
-            // 
-            this.uiMergeButton.Text = "Merge Code";
-            this.uiMergeButton.ToolTipText = "Run External Merging Application";
-            this.uiMergeButton.Activate += new System.EventHandler(this.uiMergeButton_Activate);
-            // 
             // uiTemplateContainer
             // 
             this.uiTemplateContainer.Controls.Add(this.uiTemplateDock);
@@ -558,13 +525,13 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.uiTemplateContainer.Cursor = System.Windows.Forms.Cursors.Default;
             this.uiTemplateContainer.Guid = new System.Guid("e2d7d100-338b-414b-a8f5-696d61a3348a");
             this.uiTemplateContainer.LayoutSystem = new TD.SandDock.SplitLayoutSystem(250, 400, System.Windows.Forms.Orientation.Horizontal, new TD.SandDock.LayoutSystemBase[] {
-            ((TD.SandDock.LayoutSystemBase)(new TD.SandDock.DocumentLayoutSystem(390, 492, new TD.SandDock.DockControl[] {
+            ((TD.SandDock.LayoutSystemBase)(new TD.SandDock.DocumentLayoutSystem(390, 493, new TD.SandDock.DockControl[] {
                         this.uiTemplateDock,
                         this.uiGenerateCodeDock}, this.uiTemplateDock)))});
-            this.uiTemplateContainer.Location = new System.Drawing.Point(200, 50);
+            this.uiTemplateContainer.Location = new System.Drawing.Point(200, 49);
             this.uiTemplateContainer.Manager = null;
             this.uiTemplateContainer.Name = "uiTemplateContainer";
-            this.uiTemplateContainer.Size = new System.Drawing.Size(392, 494);
+            this.uiTemplateContainer.Size = new System.Drawing.Size(392, 495);
             this.uiTemplateContainer.TabIndex = 10;
             // 
             // uiTemplateDock
@@ -574,7 +541,7 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.uiTemplateDock.Guid = new System.Guid("6065db1e-e6bf-4209-8cb9-03c7805d045a");
             this.uiTemplateDock.Location = new System.Drawing.Point(3, 23);
             this.uiTemplateDock.Name = "uiTemplateDock";
-            this.uiTemplateDock.Size = new System.Drawing.Size(386, 468);
+            this.uiTemplateDock.Size = new System.Drawing.Size(386, 469);
             this.uiTemplateDock.TabIndex = 0;
             this.uiTemplateDock.Text = "Template";
             // 
@@ -585,7 +552,7 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.uiTemplateTextBox.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uiTemplateTextBox.Location = new System.Drawing.Point(0, 0);
             this.uiTemplateTextBox.Name = "uiTemplateTextBox";
-            this.uiTemplateTextBox.Size = new System.Drawing.Size(386, 468);
+            this.uiTemplateTextBox.Size = new System.Drawing.Size(386, 469);
             this.uiTemplateTextBox.TabIndex = 0;
             this.uiTemplateTextBox.Text = "";
             // 
@@ -820,20 +787,20 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.uiAboutButton_Activate);
             // 
-            // menuStrip1
+            // uiMenuStrip
             // 
-            this.menuStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible;
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.uiMenuStrip.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible;
+            this.uiMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem,
             this.editToolStripMenuItem,
             this.viewToolStripMenuItem,
             this.generatorToolStripMenuItem,
             this.helpToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(200, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(392, 24);
-            this.menuStrip1.TabIndex = 1;
-            this.menuStrip1.Text = "menuStrip1";
+            this.uiMenuStrip.Location = new System.Drawing.Point(200, 0);
+            this.uiMenuStrip.Name = "uiMenuStrip";
+            this.uiMenuStrip.Size = new System.Drawing.Size(392, 24);
+            this.uiMenuStrip.TabIndex = 1;
+            this.uiMenuStrip.Text = "menuStrip1";
             // 
             // uiStatusBar
             // 
@@ -842,13 +809,55 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.uiStatusBar.Size = new System.Drawing.Size(392, 22);
             this.uiStatusBar.TabIndex = 0;
             // 
+            // uiToolStrip
+            // 
+            this.uiToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsGenerateCode,
+            this.tsGenerateFile,
+            this.tsGenerateMerge});
+            this.uiToolStrip.Location = new System.Drawing.Point(200, 24);
+            this.uiToolStrip.Name = "uiToolStrip";
+            this.uiToolStrip.Size = new System.Drawing.Size(392, 25);
+            this.uiToolStrip.TabIndex = 11;
+            this.uiToolStrip.Text = "toolStrip1";
+            // 
+            // tsGenerateCode
+            // 
+            this.tsGenerateCode.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.tsGenerateCode.Image = ((System.Drawing.Image)(resources.GetObject("tsGenerateCode.Image")));
+            this.tsGenerateCode.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsGenerateCode.Name = "tsGenerateCode";
+            this.tsGenerateCode.Size = new System.Drawing.Size(58, 22);
+            this.tsGenerateCode.Text = "Generate";
+            this.tsGenerateCode.Click += new System.EventHandler(this.uiGenerateButton_Activate);
+            // 
+            // tsGenerateFile
+            // 
+            this.tsGenerateFile.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.tsGenerateFile.Image = ((System.Drawing.Image)(resources.GetObject("tsGenerateFile.Image")));
+            this.tsGenerateFile.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsGenerateFile.Name = "tsGenerateFile";
+            this.tsGenerateFile.Size = new System.Drawing.Size(79, 22);
+            this.tsGenerateFile.Text = "File Generate";
+            this.tsGenerateFile.Click += new System.EventHandler(this.uiFileGenerator_Activate);
+            // 
+            // tsGenerateMerge
+            // 
+            this.tsGenerateMerge.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.tsGenerateMerge.Image = ((System.Drawing.Image)(resources.GetObject("tsGenerateMerge.Image")));
+            this.tsGenerateMerge.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.tsGenerateMerge.Name = "tsGenerateMerge";
+            this.tsGenerateMerge.Size = new System.Drawing.Size(76, 22);
+            this.tsGenerateMerge.Text = "Merge Code";
+            this.tsGenerateMerge.Click += new System.EventHandler(this.uiMergeButton_Activate);
+            // 
             // MainWindow
             // 
             this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
             this.ClientSize = new System.Drawing.Size(792, 566);
             this.Controls.Add(this.uiTemplateContainer);
-            this.Controls.Add(this.uiToolBar);
-            this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.uiToolStrip);
+            this.Controls.Add(this.uiMenuStrip);
             this.Controls.Add(this.uiStatusBar);
             this.Controls.Add(this.leftSandDock);
             this.Controls.Add(this.rightSandDock);
@@ -859,7 +868,7 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.Controls.Add(this.bottomSandBarDock);
             this.Controls.Add(this.topSandBarDock);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MainMenuStrip = this.menuStrip1;
+            this.MainMenuStrip = this.uiMenuStrip;
             this.Name = "MainWindow";
             this.Text = "iCode+Generator (MaKo-Port // GPL-Lizenziert!)";
             this.leftSandDock.ResumeLayout(false);
@@ -872,8 +881,10 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.uiTemplateContainer.ResumeLayout(false);
             this.uiTemplateDock.ResumeLayout(false);
             this.uiGenerateCodeDock.ResumeLayout(false);
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
+            this.uiMenuStrip.ResumeLayout(false);
+            this.uiMenuStrip.PerformLayout();
+            this.uiToolStrip.ResumeLayout(false);
+            this.uiToolStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

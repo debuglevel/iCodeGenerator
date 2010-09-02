@@ -21,7 +21,7 @@ namespace iCodeGenerator.DatabaseNavigator
 
 		#region Attributes
 
-		private TreeView uiNavigatorTreeView;
+        private TreeViewMultiSelect uiNavigatorTreeView;
 		private IContainer components;
 
         //private ShortcutListener _shortcuts = null;
@@ -316,7 +316,7 @@ namespace iCodeGenerator.DatabaseNavigator
 		{
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NavigatorControl));
-            this.uiNavigatorTreeView = new System.Windows.Forms.TreeView();
+            this.uiNavigatorTreeView = new iCodeGenerator.DatabaseNavigator.TreeViewMultiSelect();
             this.uiNavigatorImageList = new System.Windows.Forms.ImageList(this.components);
             this.SuspendLayout();
             // 
@@ -328,6 +328,7 @@ namespace iCodeGenerator.DatabaseNavigator
             this.uiNavigatorTreeView.Location = new System.Drawing.Point(0, 0);
             this.uiNavigatorTreeView.Name = "uiNavigatorTreeView";
             this.uiNavigatorTreeView.SelectedImageIndex = 0;
+            this.uiNavigatorTreeView.SelectedNodes = ((System.Collections.ArrayList)(resources.GetObject("uiNavigatorTreeView.SelectedNodes")));
             this.uiNavigatorTreeView.Size = new System.Drawing.Size(150, 150);
             this.uiNavigatorTreeView.TabIndex = 0;
             this.uiNavigatorTreeView.DoubleClick += new System.EventHandler(this.uiNavigatorTreeView_DoubleClick);
@@ -349,6 +350,7 @@ namespace iCodeGenerator.DatabaseNavigator
             // 
             this.Controls.Add(this.uiNavigatorTreeView);
             this.Name = "NavigatorControl";
+            this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.uiNavigatorTreeView_KeyUp);
             this.ResumeLayout(false);
 

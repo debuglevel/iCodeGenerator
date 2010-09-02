@@ -1,7 +1,7 @@
 ﻿<Project DefaultTargets="Build" ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <ProjectType>Local</ProjectType>
-    <ProductVersion>8.0.30729</ProductVersion>
+    <ProductVersion>9.0.30729</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{B8DCA4DB-BA7C-4FA9-AFFE-CB8D9FE6CFFC}</ProjectGuid>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -146,6 +146,9 @@
     </Compile>
     <Compile Include="TableEventArgs.cs">
       <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TreeViewMultiSelect.cs">
+      <SubType>Component</SubType>
     </Compile>
     <EmbeddedResource Include="NavigatorControl.resx">
       <DependentUpon>NavigatorControl.cs</DependentUpon>

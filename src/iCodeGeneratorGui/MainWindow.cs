@@ -13,9 +13,9 @@ using iCodeGenerator.DatabaseStructure;
 using iCodeGenerator.DataTypeConverter;
 using iCodeGenerator.Generator;
 using iCodeGenerator.Updater;
-using TD.SandBar;
+//using TD.SandBar;
 using TD.SandDock;
-using ToolBar=TD.SandBar.ToolBar;
+//using ToolBar=TD.SandBar.ToolBar;
 
 namespace iCodeGenerator.iCodeGeneratorGui
 {
@@ -36,7 +36,7 @@ namespace iCodeGenerator.iCodeGeneratorGui
         private DockControl uiNavigatorDock;
 		private DocumentContainer uiTemplateContainer;
 		private SandDockManager uiSandDockManager;
-		private SandBarManager uiSandBarManager;
+        //private SandBarManager uiSandBarManager;
 		private DockControl uiTemplateDock;
         private RichTextBox uiTemplateTextBox;
         private NavigatorControl uiNavigatorControl;
@@ -228,7 +228,6 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.uiSandDockManager = new TD.SandDock.SandDockManager();
             this.leftSandDock = new TD.SandDock.DockContainer();
             this.uiNavigatorDock = new TD.SandDock.DockControl();
-            this.uiNavigatorControl = new iCodeGenerator.DatabaseNavigator.NavigatorControl();
             this.uiSnippets = new TD.SandDock.DockControl();
             this.uiPropertiesDock = new TD.SandDock.DockControl();
             this.uiPropertiesPanel = new System.Windows.Forms.Panel();
@@ -241,7 +240,6 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.rightSandDock = new TD.SandDock.DockContainer();
             this.bottomSandDock = new TD.SandDock.DockContainer();
             this.topSandDock = new TD.SandDock.DockContainer();
-            this.uiSandBarManager = new TD.SandBar.SandBarManager();
             this.uiTemplateContainer = new TD.SandDock.DocumentContainer();
             this.uiTemplateDock = new TD.SandDock.DockControl();
             this.uiTemplateTextBox = new System.Windows.Forms.RichTextBox();
@@ -285,6 +283,7 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.toolStripContainer1 = new System.Windows.Forms.ToolStripContainer();
             this.uiStatusStrip = new System.Windows.Forms.StatusStrip();
+            this.uiNavigatorControl = new iCodeGenerator.DatabaseNavigator.NavigatorControl();
             this.leftSandDock.SuspendLayout();
             this.uiNavigatorDock.SuspendLayout();
             this.uiPropertiesDock.SuspendLayout();
@@ -335,20 +334,6 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.uiNavigatorDock.Size = new System.Drawing.Size(196, 448);
             this.uiNavigatorDock.TabIndex = 0;
             this.uiNavigatorDock.Text = "Navigator";
-            // 
-            // uiNavigatorControl
-            // 
-            this.uiNavigatorControl.ConnectionString = "";
-            this.uiNavigatorControl.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.uiNavigatorControl.Location = new System.Drawing.Point(0, 0);
-            this.uiNavigatorControl.Name = "uiNavigatorControl";
-            this.uiNavigatorControl.ProviderType = iCodeGenerator.GenericDataAccess.DataProviderType.SqlClient;
-            this.uiNavigatorControl.Size = new System.Drawing.Size(196, 448);
-            this.uiNavigatorControl.TabIndex = 0;
-            this.uiNavigatorControl.TableSelect += new iCodeGenerator.DatabaseNavigator.NavigatorControl.TableEventHandler(this.uiNavigatorControl_TableSelect);
-            this.uiNavigatorControl.DatabaseSelect += new iCodeGenerator.DatabaseNavigator.NavigatorControl.DatabaseEventHandler(this.uiNavigatorControl_DatabaseSelect);
-            this.uiNavigatorControl.ColumnSelect += new iCodeGenerator.DatabaseNavigator.NavigatorControl.ColumnEventHandler(this.uiNavigatorControl_ColumnSelect);
-            this.uiNavigatorControl.ColumnShowProperties += new iCodeGenerator.DatabaseNavigator.NavigatorControl.ColumnEventHandler(this.uiNavigatorControl_ColumnShowProperties);
             // 
             // uiSnippets
             // 
@@ -477,14 +462,6 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.topSandDock.Name = "topSandDock";
             this.topSandDock.Size = new System.Drawing.Size(786, 0);
             this.topSandDock.TabIndex = 5;
-            // 
-            // uiSandBarManager
-            // 
-            this.uiSandBarManager.BottomContainer = null;
-            this.uiSandBarManager.LeftContainer = null;
-            this.uiSandBarManager.OwnerForm = this;
-            this.uiSandBarManager.RightContainer = null;
-            this.uiSandBarManager.TopContainer = null;
             // 
             // uiTemplateContainer
             // 
@@ -864,16 +841,31 @@ namespace iCodeGenerator.iCodeGeneratorGui
             // 
             // toolStripContainer1.TopToolStripPanel
             // 
-            this.toolStripContainer1.TopToolStripPanel.Controls.Add(this.uiToolStrip);
             this.toolStripContainer1.TopToolStripPanel.Controls.Add(this.uiMenuStrip);
+            this.toolStripContainer1.TopToolStripPanel.Controls.Add(this.uiToolStrip);
             // 
             // uiStatusStrip
             // 
+            this.uiStatusStrip.Dock = System.Windows.Forms.DockStyle.None;
             this.uiStatusStrip.Location = new System.Drawing.Point(0, 0);
             this.uiStatusStrip.Name = "uiStatusStrip";
             this.uiStatusStrip.Size = new System.Drawing.Size(792, 22);
             this.uiStatusStrip.TabIndex = 1;
             this.uiStatusStrip.Text = "statusStrip1";
+            // 
+            // uiNavigatorControl
+            // 
+            this.uiNavigatorControl.ConnectionString = "";
+            this.uiNavigatorControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.uiNavigatorControl.Location = new System.Drawing.Point(0, 0);
+            this.uiNavigatorControl.Name = "uiNavigatorControl";
+            this.uiNavigatorControl.ProviderType = iCodeGenerator.GenericDataAccess.DataProviderType.SqlClient;
+            this.uiNavigatorControl.Size = new System.Drawing.Size(196, 448);
+            this.uiNavigatorControl.TabIndex = 0;
+            this.uiNavigatorControl.TableSelect += new iCodeGenerator.DatabaseNavigator.NavigatorControl.TableEventHandler(this.uiNavigatorControl_TableSelect);
+            this.uiNavigatorControl.DatabaseSelect += new iCodeGenerator.DatabaseNavigator.NavigatorControl.DatabaseEventHandler(this.uiNavigatorControl_DatabaseSelect);
+            this.uiNavigatorControl.ColumnSelect += new iCodeGenerator.DatabaseNavigator.NavigatorControl.ColumnEventHandler(this.uiNavigatorControl_ColumnSelect);
+            this.uiNavigatorControl.ColumnShowProperties += new iCodeGenerator.DatabaseNavigator.NavigatorControl.ColumnEventHandler(this.uiNavigatorControl_ColumnShowProperties);
             // 
             // MainWindow
             // 

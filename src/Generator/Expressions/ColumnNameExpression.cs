@@ -38,6 +38,9 @@ namespace iCodeGenerator.Generator
 					case "HUMAN":
 						replacement = HumanReplacement(replacement);
 						break;
+                    case "REMOVEPREFIX_LOWER_FIRSTUPPER":
+                        replacement = RemovePrefixLowerFirstUpperReplacement(column);
+                        break;
 					default:
 						break;
 				}
@@ -111,6 +114,16 @@ namespace iCodeGenerator.Generator
 			return replacement;
 		}
 
+        private static string RemovePrefixLowerFirstUpperReplacement(Column column)
+        {
+            //MD_AC_SOMETEXT -> Sometext
+            string[] split = column.Name.Split('_');
+            string name = split[split.Length - 1];
+            name = name.Substring(0,1).ToUpper() + name.Substring(1,name.Length-1).ToLower();
+
+            return name;
+        }
+
 		private static string InputPattern
 		{
 			get
@@ -118,7 +131,7 @@ namespace iCodeGenerator.Generator
 				return Context.StartDelimeter + 
 			                COLUMN_NAME + 
 							@"\s*" +
-			                @"(?<naming>(CAMEL|PASCAL|HUMAN|UNDERSCORE|UPPER|LOWER))*"+ 
+                            @"(?<naming>(CAMEL|PASCAL|HUMAN|UNDERSCORE|UPPER|LOWER|REMOVEPREFIX_LOWER_FIRSTUPPER))*" + 
 							Context.EndingDelimiter;
 			}
 		}

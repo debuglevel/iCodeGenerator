@@ -14,54 +14,51 @@ using System.Collections.Generic;
 namespace Locom.PlanIt.PlanItManager.ServiceAccess
 {
     [Serializable]
-    public sealed class {TABLE.NAME} : IMasterData, IComparable, IComparable<{TABLE.NAME}>
+    public sealed class {TABLE.NAME REMOVEPREFIX_LOWER_FIRSTUPPER} : IMasterData, IComparable, IComparable<{TABLE.NAME REMOVEPREFIX_LOWER_FIRSTUPPER}>
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="{TABLE.NAME}"/> class.
+        /// Initializes a new instance of the <see cref="{TABLE.NAME REMOVEPREFIX_LOWER_FIRSTUPPER}"/> class.
         /// </summary>
         /// <param name="record">The {TABLE.NAME} record.</param>
-        public {TABLE.NAME}(IRecord record)
+        public {TABLE.NAME REMOVEPREFIX_LOWER_FIRSTUPPER}(IRecord record)
         {
         {TABLE.COLUMNS}
-            this._{COLUMN.NAME} = Convert.To{MAP COLUMN.TYPE}(record[PlanItConsts.{TABLE.NAME}.{COLUMN.NAME}]);
-        {/TABLE.COLUMNS}
+		this.{COLUMN.NAME REMOVEPREFIX_LOWER} = Convert.To{MAP COLUMN.TYPE}(record[PlanItConsts.{TABLE.NAME REMOVEPREFIX_LOWER_FIRSTUPPER}.{COLUMN.NAME REMOVEPREFIX_LOWER_FIRSTUPPER}]);{/TABLE.COLUMNS}
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="{TABLE.NAME}"/> class.
+        /// Initializes a new instance of the <see cref="{TABLE.NAME REMOVEPREFIX_LOWER_FIRSTUPPER}"/> class.
         /// </summary>
-        public Client(
+        public {TABLE.NAME REMOVEPREFIX_LOWER_FIRSTUPPER}(
             {TABLE.COLUMNS}
-                {MAP COLUMN.TYPE} {COLUMN.NAME},
-            {/TABLE.COLUMNS}
+                {MAP COLUMN.TYPE} {COLUMN.NAME REMOVEPREFIX_LOWER}{IF NOT LAST},{/IF}{/TABLE.COLUMNS}
         )
         {
             {TABLE.COLUMNS}
-                this._{COLUMN.NAME} = {COLUMN.NAME};
-            {/TABLE.COLUMNS}
+                this.{COLUMN.NAME REMOVEPREFIX_LOWER} = {COLUMN.NAME REMOVEPREFIX_LOWER};{/TABLE.COLUMNS}
         }
 
 
         #region Properties
 
         {TABLE.COLUMNS PRIMARY}
-        public int {COLUMN.NAME}
+        public int {COLUMN.NAME REMOVEPREFIX_LOWER_FIRSTUPPER}
         {
             [DebuggerHidden]
-            get { return this._{COLUMN.NAME}; }
+            get { return this.{COLUMN.NAME REMOVEPREFIX_LOWER}; }
         }
-        private readonly int _{COLUMN.NAME};	
+        private readonly int {COLUMN.NAME REMOVEPREFIX_LOWER};	
         {/TABLE.COLUMNS}
 
         {TABLE.COLUMNS NOPRIMARY}
-        public string {COLUMN.NAME}
+        public string {COLUMN.NAME REMOVEPREFIX_LOWER_FIRSTUPPER}
         {
             [DebuggerHidden]
-            get { return this._{COLUMN.NAME}; }
+            get { return this.{COLUMN.NAME REMOVEPREFIX_LOWER}; }
             [DebuggerHidden]
-            set { this._{COLUMN.NAME} = value; }
+            set { this.{COLUMN.NAME REMOVEPREFIX_LOWER} = value; }
         }
-        private string _{COLUMN.NAME};
+        private string {COLUMN.NAME REMOVEPREFIX_LOWER};
         {/TABLE.COLUMNS}
 
         #endregion
@@ -78,8 +75,7 @@ namespace Locom.PlanIt.PlanItManager.ServiceAccess
                 throw new ArgumentNullException();
 
 		{TABLE.COLUMNS}
-           		record[PlanItConsts.{TABLE.NAME}.{COLUMN.NAME}] = this._{COLUMN.NAME};
-		{/TABLE.COLUMNS}
+           		record[PlanItConsts.{TABLE.NAME REMOVEPREFIX_LOWER_FIRSTUPPER}.{COLUMN.NAME REMOVEPREFIX_LOWER_FIRSTUPPER}] = this.{COLUMN.NAME REMOVEPREFIX_LOWER};{/TABLE.COLUMNS}
         }
 
         #endregion
@@ -96,7 +92,7 @@ namespace Locom.PlanIt.PlanItManager.ServiceAccess
             if (null == other)
                 return false;
 
-            {TABLE.NAME} tmp = other as {TABLE.NAME};
+            {TABLE.NAME REMOVEPREFIX_LOWER_FIRSTUPPER} tmp = other as {TABLE.NAME REMOVEPREFIX_LOWER_FIRSTUPPER};
             if (null == tmp)
                 return false;
 
@@ -136,12 +132,12 @@ namespace Locom.PlanIt.PlanItManager.ServiceAccess
         /// <returns></returns>
         public int CompareTo(object other)
         {
-            return this.CompareTo(other as {TABLE.NAME});
+            return this.CompareTo(other as {TABLE.NAME REMOVEPREFIX_LOWER_FIRSTUPPER});
         }
 
         #endregion
 
-        #region IComparable<{TABLE.NAME}> Member
+        #region IComparable<{TABLE.NAME REMOVEPREFIX_LOWER_FIRSTUPPER}> Member
 
         /// <summary>
         /// Vergleicht das aktuelle Objekt mit einem anderen Objekt desselben Typs.
@@ -150,12 +146,12 @@ namespace Locom.PlanIt.PlanItManager.ServiceAccess
         /// <returns>
         /// Eine 32-Bit-Ganzzahl mit Vorzeichen, die die relative Reihenfolge der verglichenen Objekte angibt. Der Rückgabewert hat folgende Bedeutung:WertBedeutung Kleiner als 0 (null)Dieses Objekt ist kleiner als der other-Parameter.0 Dieses Objekt ist gleich other. Größer als 0 (null)Dieses Objekt ist größer als other.
         /// </returns>
-        public int CompareTo({TABLE.NAME} other)
+        public int CompareTo({TABLE.NAME REMOVEPREFIX_LOWER_FIRSTUPPER} other)
         {
             if (null == other)
                 return -1;
 
-            //TODO: spezifische Vergleichsfunktion fuer {TABLE.NAME} implementieren
+            //TODO: spezifische Vergleichsfunktion fuer {TABLE.NAME REMOVEPREFIX_LOWER_FIRSTUPPER} implementieren
             throw new NotImplementedException();
         }
 

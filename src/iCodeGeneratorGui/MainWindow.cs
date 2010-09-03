@@ -319,7 +319,7 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.leftSandDock.LayoutSystem = new TD.SandDock.SplitLayoutSystem(250, 400, System.Windows.Forms.Orientation.Horizontal, new TD.SandDock.LayoutSystemBase[] {
             ((TD.SandDock.LayoutSystemBase)(new TD.SandDock.ControlLayoutSystem(196, 489, new TD.SandDock.DockControl[] {
                         this.uiNavigatorDock,
-                        this.uiSnippets}, this.uiSnippets)))});
+                        this.uiSnippets}, this.uiNavigatorDock)))});
             this.leftSandDock.Location = new System.Drawing.Point(0, 0);
             this.leftSandDock.Manager = this.uiSandDockManager;
             this.leftSandDock.Name = "leftSandDock";

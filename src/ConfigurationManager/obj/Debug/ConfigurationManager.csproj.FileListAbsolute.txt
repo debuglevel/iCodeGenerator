@@ -8,3 +8,8 @@ D:\temp\codegenerator_new\src\ConfigurationManager\bin\Debug\iCodeGenerator.Conf
 D:\temp\codegenerator_new\src\ConfigurationManager\obj\Debug\ResolveAssemblyReference.cache
 D:\temp\codegenerator_new\src\ConfigurationManager\obj\Debug\iCodeGenerator.ConfigurationManager.dll
 D:\temp\codegenerator_new\src\ConfigurationManager\obj\Debug\iCodeGenerator.ConfigurationManager.pdb
+D:\SRC.own\codegenerator\src\ConfigurationManager\bin\Debug\iCodeGenerator.ConfigurationManager.dll
+D:\SRC.own\codegenerator\src\ConfigurationManager\bin\Debug\iCodeGenerator.ConfigurationManager.pdb
+D:\SRC.own\codegenerator\src\ConfigurationManager\obj\Debug\ResolveAssemblyReference.cache
+D:\SRC.own\codegenerator\src\ConfigurationManager\obj\Debug\iCodeGenerator.ConfigurationManager.dll
+D:\SRC.own\codegenerator\src\ConfigurationManager\obj\Debug\iCodeGenerator.ConfigurationManager.pdb

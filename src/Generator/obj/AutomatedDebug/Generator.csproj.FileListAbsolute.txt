@@ -9,3 +9,9 @@ D:\temp\codegenerator_new\src\Generator\obj\AutomatedDebug\ResolveAssemblyRefere
 D:\temp\codegenerator_new\src\Generator\obj\AutomatedDebug\iCodeGenerator.Generator.dll
 D:\temp\codegenerator_new\src\Generator\obj\AutomatedDebug\iCodeGenerator.Generator.pdb
 D:\temp\codegenerator_new\build\Debug\Generator\DataTypeMapping.xml
+D:\SRC.own\codegenerator\build\Debug\Generator\DataTypeMapping.xml
+D:\SRC.own\codegenerator\build\Debug\Generator\iCodeGenerator.Generator.dll
+D:\SRC.own\codegenerator\build\Debug\Generator\iCodeGenerator.Generator.pdb
+D:\SRC.own\codegenerator\src\Generator\obj\AutomatedDebug\ResolveAssemblyReference.cache
+D:\SRC.own\codegenerator\src\Generator\obj\AutomatedDebug\iCodeGenerator.Generator.dll
+D:\SRC.own\codegenerator\src\Generator\obj\AutomatedDebug\iCodeGenerator.Generator.pdb

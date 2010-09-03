@@ -9,3 +9,9 @@ D:\temp\codegenerator_new\src\UnitTests\obj\AutomatedDebug\ResolveAssemblyRefere
 D:\temp\codegenerator_new\src\UnitTests\obj\AutomatedDebug\iCodeGenerator.UnitTests.dll
 D:\temp\codegenerator_new\src\UnitTests\obj\AutomatedDebug\iCodeGenerator.UnitTests.pdb
 D:\temp\codegenerator_new\build\Debug\UnitTests\DataTypeMapping.xml
+D:\SRC.own\codegenerator\build\Debug\UnitTests\DataTypeMapping.xml
+D:\SRC.own\codegenerator\build\Debug\UnitTests\iCodeGenerator.UnitTests.dll
+D:\SRC.own\codegenerator\build\Debug\UnitTests\iCodeGenerator.UnitTests.pdb
+D:\SRC.own\codegenerator\src\UnitTests\obj\AutomatedDebug\ResolveAssemblyReference.cache
+D:\SRC.own\codegenerator\src\UnitTests\obj\AutomatedDebug\iCodeGenerator.UnitTests.dll
+D:\SRC.own\codegenerator\src\UnitTests\obj\AutomatedDebug\iCodeGenerator.UnitTests.pdb

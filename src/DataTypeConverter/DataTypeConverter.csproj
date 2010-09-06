@@ -130,7 +130,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Content Include="DataTypeMapping.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="DataTypeMapping.xsd" />
   </ItemGroup>

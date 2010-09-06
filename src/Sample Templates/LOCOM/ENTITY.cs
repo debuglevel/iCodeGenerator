@@ -15,7 +15,7 @@ using System.Collections.Generic;
 namespace Locom.PlanIt.Masterdata.ServiceAccess.{TABLE.NAME REMOVEPREFIX_LOWER_FIRSTUPPER}
 {
     [Serializable]
-    public sealed class {TABLE.NAME REMOVEPREFIX_LOWER_FIRSTUPPER} : IRecordSerializable, IComparable, IComparable<{TABLE.NAME REMOVEPREFIX_LOWER_FIRSTUPPER}>
+    public sealed class {TABLE.NAME REMOVEPREFIX_LOWER_FIRSTUPPER}Model : IRecordSerializable, IComparable, IComparable<{TABLE.NAME REMOVEPREFIX_LOWER_FIRSTUPPER}>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="{TABLE.NAME REMOVEPREFIX_LOWER_FIRSTUPPER}"/> class.
@@ -24,7 +24,7 @@ namespace Locom.PlanIt.Masterdata.ServiceAccess.{TABLE.NAME REMOVEPREFIX_LOWER_F
         public {TABLE.NAME REMOVEPREFIX_LOWER_FIRSTUPPER}(IRecord record)
         {
         {TABLE.COLUMNS}
-        {IF COLUMN.NAME !~ '(UPD|INS)_(USER|DATE)'}	this.{COLUMN.NAME REMOVEPREFIX_LOWER} = Convert.To{MAP COLUMN.TYPE}(record[PlanItConsts.{TABLE.NAME REMOVEPREFIX_LOWER_FIRSTUPPER}.{COLUMN.NAME REMOVEPREFIX_LOWER_FIRSTUPPER}]);{/IF}
+        {IF COLUMN.NAME !~ '(UPD|INS)_(USER|DATE)'}	this.{COLUMN.NAME REMOVEPREFIX_LOWER} = Convert.To{MAP COLUMN.TYPE}(record[Masterdata{TABLE.NAME REMOVEPREFIX_LOWER_FIRSTUPPER}Consts.ModuleTable.{TABLE.NAME REMOVEPREFIX_UPPER}_{COLUMN.NAME REMOVEPREFIX_UPPER}.Name]);{/IF}
 	 {/TABLE.COLUMNS}
         }
 
@@ -46,24 +46,24 @@ namespace Locom.PlanIt.Masterdata.ServiceAccess.{TABLE.NAME REMOVEPREFIX_LOWER_F
         #region Properties
 
         {TABLE.COLUMNS PRIMARY}
-        public int {COLUMN.NAME REMOVEPREFIX_LOWER_FIRSTUPPER}
+        public {MAP COLUMN.TYPE} {COLUMN.NAME REMOVEPREFIX_LOWER_FIRSTUPPER}
         {
             [DebuggerHidden]
             get { return this.{COLUMN.NAME REMOVEPREFIX_LOWER}; }
         }
-        private readonly int {COLUMN.NAME REMOVEPREFIX_LOWER};	
+        private readonly {MAP COLUMN.TYPE} {COLUMN.NAME REMOVEPREFIX_LOWER};	
         {/TABLE.COLUMNS}
 
         {TABLE.COLUMNS NOPRIMARY}
 	 {IF COLUMN.NAME !~ '(UPD|INS)_(USER|DATE)'}	
-        public string {COLUMN.NAME REMOVEPREFIX_LOWER_FIRSTUPPER}
+        public {MAP COLUMN.TYPE} {COLUMN.NAME REMOVEPREFIX_LOWER_FIRSTUPPER}
         {
             [DebuggerHidden]
             get { return this.{COLUMN.NAME REMOVEPREFIX_LOWER}; }
             [DebuggerHidden]
             set { this.{COLUMN.NAME REMOVEPREFIX_LOWER} = value; }
         }
-        private string {COLUMN.NAME REMOVEPREFIX_LOWER};
+        private {MAP COLUMN.TYPE} {COLUMN.NAME REMOVEPREFIX_LOWER};
 	 {/IF}
         {/TABLE.COLUMNS}
 
@@ -82,7 +82,7 @@ namespace Locom.PlanIt.Masterdata.ServiceAccess.{TABLE.NAME REMOVEPREFIX_LOWER_F
 
 		{TABLE.COLUMNS}
 		{IF COLUMN.NAME !~ '(UPD|INS)_(USER|DATE)'}	
-           		record[PlanItConsts.{TABLE.NAME REMOVEPREFIX_LOWER_FIRSTUPPER}.{COLUMN.NAME REMOVEPREFIX_LOWER_FIRSTUPPER}] = this.{COLUMN.NAME REMOVEPREFIX_LOWER};{/IF}{/TABLE.COLUMNS}
+           		record[Masterdata{TABLE.NAME REMOVEPREFIX_LOWER_FIRSTUPPER}Consts.ModuleTable.{TABLE.NAME REMOVEPREFIX_UPPER}_{COLUMN.NAME REMOVEPREFIX_UPPER}.Name] = this.{COLUMN.NAME REMOVEPREFIX_LOWER};{/IF}{/TABLE.COLUMNS}
         }
 
         #endregion

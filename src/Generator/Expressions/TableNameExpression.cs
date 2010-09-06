@@ -56,6 +56,9 @@ namespace iCodeGenerator.Generator
                     case "REMOVEPREFIX_LOWER_FIRSTUPPER":
                         replacement = RemovePrefixLowerFirstUpperReplacement(table);
                         break;
+                    case "REMOVEPREFIX_UPPER":
+                        replacement = RemovePrefixUpperReplacement(table);
+                        break;
                     case "REMOVEPREFIX_LOWER":
                         replacement = RemovePrefixLowerReplacement(table);
                         break;
@@ -151,6 +154,15 @@ namespace iCodeGenerator.Generator
             return name;
         }
 
+        private static string RemovePrefixUpperReplacement(Table column)
+        {
+            //MD_AC_Sometext -> SOMETEXT
+            string[] split = column.Name.Split('_');
+            string name = split[split.Length - 1].ToUpper();
+
+            return name;
+        }
+
         private static string InputPattern
         {
             get
@@ -158,7 +170,7 @@ namespace iCodeGenerator.Generator
                 return Context.StartDelimeter +
                             TABLE_NAME +
                             @"\s*" +
-                            @"(?<naming>(CAMEL|PASCAL|HUMAN|UNDERSCORE|UPPER|LOWER|REMOVEPREFIX_LOWER_FIRSTUPPER|REMOVEPREFIX_LOWER))*" +
+                            @"(?<naming>(CAMEL|PASCAL|HUMAN|UNDERSCORE|UPPER|LOWER|REMOVEPREFIX_LOWER_FIRSTUPPER|REMOVEPREFIX_LOWER|REMOVEPREFIX_UPPER))*" +
                             Context.EndingDelimiter;
             }
         }

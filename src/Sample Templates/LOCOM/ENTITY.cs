@@ -11,10 +11,11 @@ using System.Collections.Generic;
 *
 */
 
-namespace Locom.PlanIt.PlanItManager.ServiceAccess
+
+namespace Locom.PlanIt.Masterdata.ServiceAccess.{TABLE.NAME REMOVEPREFIX_LOWER_FIRSTUPPER}
 {
     [Serializable]
-    public sealed class {TABLE.NAME REMOVEPREFIX_LOWER_FIRSTUPPER} : IMasterData, IComparable, IComparable<{TABLE.NAME REMOVEPREFIX_LOWER_FIRSTUPPER}>
+    public sealed class {TABLE.NAME REMOVEPREFIX_LOWER_FIRSTUPPER} : IRecordSerializable, IComparable, IComparable<{TABLE.NAME REMOVEPREFIX_LOWER_FIRSTUPPER}>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="{TABLE.NAME REMOVEPREFIX_LOWER_FIRSTUPPER}"/> class.
@@ -23,7 +24,8 @@ namespace Locom.PlanIt.PlanItManager.ServiceAccess
         public {TABLE.NAME REMOVEPREFIX_LOWER_FIRSTUPPER}(IRecord record)
         {
         {TABLE.COLUMNS}
-		this.{COLUMN.NAME REMOVEPREFIX_LOWER} = Convert.To{MAP COLUMN.TYPE}(record[PlanItConsts.{TABLE.NAME REMOVEPREFIX_LOWER_FIRSTUPPER}.{COLUMN.NAME REMOVEPREFIX_LOWER_FIRSTUPPER}]);{/TABLE.COLUMNS}
+        {IF COLUMN.NAME !~ '(UPD|INS)_(USER|DATE)'}	this.{COLUMN.NAME REMOVEPREFIX_LOWER} = Convert.To{MAP COLUMN.TYPE}(record[PlanItConsts.{TABLE.NAME REMOVEPREFIX_LOWER_FIRSTUPPER}.{COLUMN.NAME REMOVEPREFIX_LOWER_FIRSTUPPER}]);{/IF}
+	 {/TABLE.COLUMNS}
         }
 
         /// <summary>
@@ -31,11 +33,13 @@ namespace Locom.PlanIt.PlanItManager.ServiceAccess
         /// </summary>
         public {TABLE.NAME REMOVEPREFIX_LOWER_FIRSTUPPER}(
             {TABLE.COLUMNS}
-                {MAP COLUMN.TYPE} {COLUMN.NAME REMOVEPREFIX_LOWER}{IF NOT LAST},{/IF}{/TABLE.COLUMNS}
+		{IF COLUMN.NAME !~ '(UPD|INS)_(USER|DATE)'}	
+                {MAP COLUMN.TYPE} {COLUMN.NAME REMOVEPREFIX_LOWER}{IF NOT LAST},{/IF}{/IF}{/TABLE.COLUMNS}
         )
         {
             {TABLE.COLUMNS}
-                this.{COLUMN.NAME REMOVEPREFIX_LOWER} = {COLUMN.NAME REMOVEPREFIX_LOWER};{/TABLE.COLUMNS}
+		{IF COLUMN.NAME !~ '(UPD|INS)_(USER|DATE)'}	
+                this.{COLUMN.NAME REMOVEPREFIX_LOWER} = {COLUMN.NAME REMOVEPREFIX_LOWER};{/IF}{/TABLE.COLUMNS}
         }
 
 
@@ -51,6 +55,7 @@ namespace Locom.PlanIt.PlanItManager.ServiceAccess
         {/TABLE.COLUMNS}
 
         {TABLE.COLUMNS NOPRIMARY}
+	 {IF COLUMN.NAME !~ '(UPD|INS)_(USER|DATE)'}	
         public string {COLUMN.NAME REMOVEPREFIX_LOWER_FIRSTUPPER}
         {
             [DebuggerHidden]
@@ -59,6 +64,7 @@ namespace Locom.PlanIt.PlanItManager.ServiceAccess
             set { this.{COLUMN.NAME REMOVEPREFIX_LOWER} = value; }
         }
         private string {COLUMN.NAME REMOVEPREFIX_LOWER};
+	 {/IF}
         {/TABLE.COLUMNS}
 
         #endregion
@@ -75,7 +81,8 @@ namespace Locom.PlanIt.PlanItManager.ServiceAccess
                 throw new ArgumentNullException();
 
 		{TABLE.COLUMNS}
-           		record[PlanItConsts.{TABLE.NAME REMOVEPREFIX_LOWER_FIRSTUPPER}.{COLUMN.NAME REMOVEPREFIX_LOWER_FIRSTUPPER}] = this.{COLUMN.NAME REMOVEPREFIX_LOWER};{/TABLE.COLUMNS}
+		{IF COLUMN.NAME !~ '(UPD|INS)_(USER|DATE)'}	
+           		record[PlanItConsts.{TABLE.NAME REMOVEPREFIX_LOWER_FIRSTUPPER}.{COLUMN.NAME REMOVEPREFIX_LOWER_FIRSTUPPER}] = this.{COLUMN.NAME REMOVEPREFIX_LOWER};{/IF}{/TABLE.COLUMNS}
         }
 
         #endregion
@@ -100,7 +107,7 @@ namespace Locom.PlanIt.PlanItManager.ServiceAccess
         }
 
         /// <summary>
-        /// Fungiert als Hashfunktion für einen bestimmten Typ. <see cref="M:System.Object.GetHashCode"></see> eignet sich für die Verwendung in Hashalgorithmen und Hashdatenstrukturen, z. B. in einer Hashtabelle.
+        /// Fungiert als Hashfunktion für einen bestimmten Typ. <see cref="M:System.Object.GetHashCode"></see> eignet sich für die Verwendung in Hashalgorithmen und Hashdatenstrukturen, z. B. in einer Hashtabelle.
         /// </summary>
         /// <returns>
         /// Ein Hashcode für das aktuelle <see cref="T:System.Object"></see>.
@@ -144,7 +151,7 @@ namespace Locom.PlanIt.PlanItManager.ServiceAccess
         /// </summary>
         /// <param name="other">Ein Objekt, das mit diesem Objekt verglichen werden soll.</param>
         /// <returns>
-        /// Eine 32-Bit-Ganzzahl mit Vorzeichen, die die relative Reihenfolge der verglichenen Objekte angibt. Der Rückgabewert hat folgende Bedeutung:WertBedeutung Kleiner als 0 (null)Dieses Objekt ist kleiner als der other-Parameter.0 Dieses Objekt ist gleich other. Größer als 0 (null)Dieses Objekt ist größer als other.
+        /// Eine 32-Bit-Ganzzahl mit Vorzeichen, die die relative Reihenfolge der verglichenen Objekte angibt. Der Rückgabewert hat folgende Bedeutung:WertBedeutung Kleiner als 0 (null)Dieses Objekt ist kleiner als der other-Parameter.0 Dieses Objekt ist gleich other. Größer als 0 (null)Dieses Objekt ist größer als other.
         /// </returns>
         public int CompareTo({TABLE.NAME REMOVEPREFIX_LOWER_FIRSTUPPER} other)
         {
@@ -158,3 +165,4 @@ namespace Locom.PlanIt.PlanItManager.ServiceAccess
         #endregion
     }
 }
+

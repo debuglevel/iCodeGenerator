@@ -15,13 +15,13 @@ using System.Collections.Generic;
 namespace Locom.PlanIt.Masterdata.ServiceAccess.{TABLE.NAME REMOVEPREFIX_LOWER_FIRSTUPPER}
 {
     [Serializable]
-    public sealed class {TABLE.NAME REMOVEPREFIX_LOWER_FIRSTUPPER}Model : IRecordSerializable, IComparable, IComparable<{TABLE.NAME REMOVEPREFIX_LOWER_FIRSTUPPER}>
+    public sealed class {TABLE.NAME REMOVEPREFIX_LOWER_FIRSTUPPER}Model : IRecordSerializable, IComparable, IComparable<{TABLE.NAME REMOVEPREFIX_LOWER_FIRSTUPPER}Model>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="{TABLE.NAME REMOVEPREFIX_LOWER_FIRSTUPPER}"/> class.
         /// </summary>
         /// <param name="record">The {TABLE.NAME} record.</param>
-        public {TABLE.NAME REMOVEPREFIX_LOWER_FIRSTUPPER}(IRecord record)
+        public {TABLE.NAME REMOVEPREFIX_LOWER_FIRSTUPPER}Model(IRecord record)
         {
         {TABLE.COLUMNS}
         {IF COLUMN.NAME !~ '(UPD|INS)_(USER|DATE)'}	this.{COLUMN.NAME REMOVEPREFIX_LOWER} = Convert.To{MAP COLUMN.TYPE}(record[Masterdata{TABLE.NAME REMOVEPREFIX_LOWER_FIRSTUPPER}Consts.ModuleTable.{TABLE.NAME REMOVEPREFIX_UPPER}_{COLUMN.NAME REMOVEPREFIX_UPPER}.Name]);{/IF}
@@ -31,7 +31,7 @@ namespace Locom.PlanIt.Masterdata.ServiceAccess.{TABLE.NAME REMOVEPREFIX_LOWER_F
         /// <summary>
         /// Initializes a new instance of the <see cref="{TABLE.NAME REMOVEPREFIX_LOWER_FIRSTUPPER}"/> class.
         /// </summary>
-        public {TABLE.NAME REMOVEPREFIX_LOWER_FIRSTUPPER}(
+        public {TABLE.NAME REMOVEPREFIX_LOWER_FIRSTUPPER}Model(
             {TABLE.COLUMNS}
 		{IF COLUMN.NAME !~ '(UPD|INS)_(USER|DATE)'}	
                 {MAP COLUMN.TYPE} {COLUMN.NAME REMOVEPREFIX_LOWER}{IF NOT LAST},{/IF}{/IF}{/TABLE.COLUMNS}
@@ -99,7 +99,7 @@ namespace Locom.PlanIt.Masterdata.ServiceAccess.{TABLE.NAME REMOVEPREFIX_LOWER_F
             if (null == other)
                 return false;
 
-            {TABLE.NAME REMOVEPREFIX_LOWER_FIRSTUPPER} tmp = other as {TABLE.NAME REMOVEPREFIX_LOWER_FIRSTUPPER};
+            {TABLE.NAME REMOVEPREFIX_LOWER_FIRSTUPPER}Model tmp = other as {TABLE.NAME REMOVEPREFIX_LOWER_FIRSTUPPER}Model;
             if (null == tmp)
                 return false;
 
@@ -125,7 +125,8 @@ namespace Locom.PlanIt.Masterdata.ServiceAccess.{TABLE.NAME REMOVEPREFIX_LOWER_F
         /// </returns>
         public override string ToString()
         {
-            return this.name;
+            //TODO: spezifische ToString-Funktion implementieren
+            throw new NotImplementedException();
         }
 
         #endregion
@@ -139,12 +140,12 @@ namespace Locom.PlanIt.Masterdata.ServiceAccess.{TABLE.NAME REMOVEPREFIX_LOWER_F
         /// <returns></returns>
         public int CompareTo(object other)
         {
-            return this.CompareTo(other as {TABLE.NAME REMOVEPREFIX_LOWER_FIRSTUPPER});
+            return this.CompareTo(other as {TABLE.NAME REMOVEPREFIX_LOWER_FIRSTUPPER}Model);
         }
 
         #endregion
 
-        #region IComparable<{TABLE.NAME REMOVEPREFIX_LOWER_FIRSTUPPER}> Member
+        #region IComparable<{TABLE.NAME REMOVEPREFIX_LOWER_FIRSTUPPER}Model> Member
 
         /// <summary>
         /// Vergleicht das aktuelle Objekt mit einem anderen Objekt desselben Typs.
@@ -153,7 +154,7 @@ namespace Locom.PlanIt.Masterdata.ServiceAccess.{TABLE.NAME REMOVEPREFIX_LOWER_F
         /// <returns>
         /// Eine 32-Bit-Ganzzahl mit Vorzeichen, die die relative Reihenfolge der verglichenen Objekte angibt. Der Rückgabewert hat folgende Bedeutung:WertBedeutung Kleiner als 0 (null)Dieses Objekt ist kleiner als der other-Parameter.0 Dieses Objekt ist gleich other. Größer als 0 (null)Dieses Objekt ist größer als other.
         /// </returns>
-        public int CompareTo({TABLE.NAME REMOVEPREFIX_LOWER_FIRSTUPPER} other)
+        public int CompareTo({TABLE.NAME REMOVEPREFIX_LOWER_FIRSTUPPER}Model other)
         {
             if (null == other)
                 return -1;

@@ -35,8 +35,8 @@ namespace iCodeGenerator.iCodeGeneratorGui
 		private void AddTableName()
 		{
 				_htSnippets.Add("{TABLE.NAME...",
-			                Context.StartDelimeter 
-			                + "TABLE.NAME"
+			                Context.StartDelimeter
+                            + "TABLE.NAME UPPER|LOWER|CAMEL|HUMAN|REMOVEPREFIX_LOWER_FIRSTUPPER|REMOVEPREFIX_LOWER|REMOVEPREFIX_UPPER"
 			                + Context.EndingDelimiter
 				);
 		}
@@ -137,8 +137,8 @@ namespace iCodeGenerator.iCodeGeneratorGui
 		private void AddColumnName()
 		{
 			_htSnippets.Add("{COLUMN.NAME...",
-			                Context.StartDelimeter 
-			                + "COLUMN.NAME UPPER|LOWER|CAMEL|HUMAN"
+			                Context.StartDelimeter
+                            + "COLUMN.NAME UPPER|LOWER|CAMEL|HUMAN|REMOVEPREFIX_LOWER_FIRSTUPPER|REMOVEPREFIX_LOWER|REMOVEPREFIX_UPPER"
 			                + Context.EndingDelimiter
 				);
 		}

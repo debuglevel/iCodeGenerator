@@ -44,15 +44,20 @@ namespace iCodeGenerator.Generator
 			}			
 			foreach(FileInfo fileInfo in directoryInfo.GetFiles())
 			{
-				client.StartDelimiter = originalSD;
-				client.EndingDelimiter = originalED;
+                //client.StartDelimiter = originalSD;
+                //client.EndingDelimiter = originalED;
 				StreamReader sr = File.OpenText(fileInfo.FullName);
 				string fileContent = sr.ReadToEnd();
 				sr.Close();
 				string codeGenerated = client.Parse(table,fileContent);
-				client.StartDelimiter = String.Empty;
-				client.EndingDelimiter = String.Empty;
+				
+                //client.StartDelimiter = String.Empty;
+                //client.EndingDelimiter = String.Empty;
 				string filename = client.Parse(table,fileInfo.Name);
+                //change back Delimiters immediately (subsequent calls to Generate() fail if you don't do so)
+                //client.StartDelimiter = originalSD;
+                //client.EndingDelimiter = originalED;
+
 				try
 				{
 					StreamWriter sw = new StreamWriter(outputDir + Path.DirectorySeparatorChar + filename);

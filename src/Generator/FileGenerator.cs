@@ -36,8 +36,8 @@ namespace iCodeGenerator.Generator
 		{
 			DirectoryInfo directoryInfo = new DirectoryInfo(inputDir);
 			Client client = new Client();
-			string originalSD = client.StartDelimiter;
-			string originalED = client.EndingDelimiter;
+            //string originalSD = client.StartDelimiter;
+            //string originalED = client.EndingDelimiter;
 			if(_CustomValue != null)
 			{
 				client.CustomValues = _CustomValue;	
@@ -53,14 +53,24 @@ namespace iCodeGenerator.Generator
 				
                 //client.StartDelimiter = String.Empty;
                 //client.EndingDelimiter = String.Empty;
+                string dirname = client.Parse(table, directoryInfo.Name);
 				string filename = client.Parse(table,fileInfo.Name);
                 //change back Delimiters immediately (subsequent calls to Generate() fail if you don't do so)
                 //client.StartDelimiter = originalSD;
                 //client.EndingDelimiter = originalED;
 
+                String fullDir = outputDir + Path.DirectorySeparatorChar + dirname;
+
 				try
 				{
-					StreamWriter sw = new StreamWriter(outputDir + Path.DirectorySeparatorChar + filename);
+                    //StreamWriter sw = new StreamWriter(outputDir + Path.DirectorySeparatorChar + filename);
+
+                    if (Directory.Exists(fullDir) == false)
+                    {
+                        Directory.CreateDirectory(fullDir);
+                    }
+
+                    StreamWriter sw = new StreamWriter(fullDir + Path.DirectorySeparatorChar + filename);
 					sw.Write(codeGenerated);
 					sw.Flush();
 					sw.Close();
@@ -77,11 +87,11 @@ namespace iCodeGenerator.Generator
         {
             foreach (Table table in tables)
             {
-                String specificOutputDir = baseOutputDir + Path.DirectorySeparatorChar + table.Name;
-                if (Directory.Exists(specificOutputDir) == false)
-                {
-                    Directory.CreateDirectory(specificOutputDir);
-                }
+                String specificOutputDir = baseOutputDir;// +Path.DirectorySeparatorChar + table.Name;
+                //if (Directory.Exists(specificOutputDir) == false)
+                //{
+                //    Directory.CreateDirectory(specificOutputDir);
+                //}
 
                 Generate(table, inputDir, specificOutputDir);
             }

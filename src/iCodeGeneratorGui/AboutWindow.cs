@@ -15,6 +15,7 @@ namespace iCodeGenerator.iCodeGeneratorGui
         private System.Windows.Forms.Label uiCodeGeneratorLabel;
         private Label label1;
         private Label label4;
+        private LinkLabel linkLabel1;
 		/// <summary>
 		/// Required designer variable.
 		/// </summary>
@@ -56,6 +57,7 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.uiCodeGeneratorLink = new System.Windows.Forms.LinkLabel();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // uiCodeGeneratorLabel
@@ -88,7 +90,7 @@ namespace iCodeGenerator.iCodeGeneratorGui
             // 
             // uiCodeGeneratorLink
             // 
-            this.uiCodeGeneratorLink.Location = new System.Drawing.Point(32, 110);
+            this.uiCodeGeneratorLink.Location = new System.Drawing.Point(32, 54);
             this.uiCodeGeneratorLink.Name = "uiCodeGeneratorLink";
             this.uiCodeGeneratorLink.Size = new System.Drawing.Size(232, 23);
             this.uiCodeGeneratorLink.TabIndex = 3;
@@ -100,7 +102,7 @@ namespace iCodeGenerator.iCodeGeneratorGui
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(12, 54);
+            this.label1.Location = new System.Drawing.Point(12, 77);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(164, 23);
             this.label1.TabIndex = 4;
@@ -109,18 +111,30 @@ namespace iCodeGenerator.iCodeGeneratorGui
             // 
             // label4
             // 
-            this.label4.Location = new System.Drawing.Point(180, 54);
+            this.label4.Location = new System.Drawing.Point(180, 77);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(100, 23);
             this.label4.TabIndex = 5;
             this.label4.Text = "2010";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // linkLabel1
+            // 
+            this.linkLabel1.Location = new System.Drawing.Point(32, 100);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(232, 23);
+            this.linkLabel1.TabIndex = 6;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "http://github.com/garfield/iCodeGenerator";
+            this.linkLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.linkLabel1.VisitedLinkColor = System.Drawing.Color.Red;
+            // 
             // AboutWindow
             // 
             this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
             this.BackColor = System.Drawing.SystemColors.Window;
             this.ClientSize = new System.Drawing.Size(292, 136);
+            this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.uiCodeGeneratorLink);

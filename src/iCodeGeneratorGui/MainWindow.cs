@@ -319,13 +319,13 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.leftSandDock.Dock = System.Windows.Forms.DockStyle.Left;
             this.leftSandDock.Guid = new System.Guid("4447f9b6-bb46-4444-9654-653e0fac0c75");
             this.leftSandDock.LayoutSystem = new TD.SandDock.SplitLayoutSystem(250, 400, System.Windows.Forms.Orientation.Horizontal, new TD.SandDock.LayoutSystemBase[] {
-            ((TD.SandDock.LayoutSystemBase)(new TD.SandDock.ControlLayoutSystem(196, 489, new TD.SandDock.DockControl[] {
+            ((TD.SandDock.LayoutSystemBase)(new TD.SandDock.ControlLayoutSystem(196, 513, new TD.SandDock.DockControl[] {
                         this.uiNavigatorDock,
                         this.uiSnippets}, this.uiNavigatorDock)))});
             this.leftSandDock.Location = new System.Drawing.Point(0, 0);
             this.leftSandDock.Manager = this.uiSandDockManager;
             this.leftSandDock.Name = "leftSandDock";
-            this.leftSandDock.Size = new System.Drawing.Size(200, 489);
+            this.leftSandDock.Size = new System.Drawing.Size(200, 513);
             this.leftSandDock.TabIndex = 2;
             // 
             // uiNavigatorDock
@@ -334,7 +334,7 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.uiNavigatorDock.Guid = new System.Guid("be35efbb-904d-42cd-ab9a-e897e77040b6");
             this.uiNavigatorDock.Location = new System.Drawing.Point(0, 18);
             this.uiNavigatorDock.Name = "uiNavigatorDock";
-            this.uiNavigatorDock.Size = new System.Drawing.Size(196, 448);
+            this.uiNavigatorDock.Size = new System.Drawing.Size(196, 472);
             this.uiNavigatorDock.TabIndex = 0;
             this.uiNavigatorDock.Text = "Navigator";
             // 
@@ -346,7 +346,7 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.uiNavigatorControl.Name = "uiNavigatorControl";
             this.uiNavigatorControl.ProviderType = iCodeGenerator.GenericDataAccess.DataProviderType.MSSQL;
             this.uiNavigatorControl.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.uiNavigatorControl.Size = new System.Drawing.Size(196, 448);
+            this.uiNavigatorControl.Size = new System.Drawing.Size(196, 472);
             this.uiNavigatorControl.TabIndex = 0;
             this.uiNavigatorControl.TableSelect += new iCodeGenerator.DatabaseNavigator.NavigatorControl.TableEventHandler(this.uiNavigatorControl_TableSelect);
             this.uiNavigatorControl.TablesSelect += new iCodeGenerator.DatabaseNavigator.NavigatorControl.TablesEventHandler(this.uiNavigatorControl_TablesSelect);
@@ -359,7 +359,7 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.uiSnippets.Guid = new System.Guid("a7b3b4f4-8ba9-4862-9b34-5e2c54880aec");
             this.uiSnippets.Location = new System.Drawing.Point(0, 18);
             this.uiSnippets.Name = "uiSnippets";
-            this.uiSnippets.Size = new System.Drawing.Size(196, 448);
+            this.uiSnippets.Size = new System.Drawing.Size(196, 472);
             this.uiSnippets.TabIndex = 1;
             this.uiSnippets.Text = "Snippets";
             // 
@@ -369,7 +369,7 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.uiPropertiesDock.Guid = new System.Guid("4f16c3df-5375-4159-85ae-522ff2daa5b4");
             this.uiPropertiesDock.Location = new System.Drawing.Point(4, 18);
             this.uiPropertiesDock.Name = "uiPropertiesDock";
-            this.uiPropertiesDock.Size = new System.Drawing.Size(196, 201);
+            this.uiPropertiesDock.Size = new System.Drawing.Size(196, 213);
             this.uiPropertiesDock.TabIndex = 1;
             this.uiPropertiesDock.Text = "Properties";
             // 
@@ -379,7 +379,7 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.uiPropertiesPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.uiPropertiesPanel.Location = new System.Drawing.Point(0, 0);
             this.uiPropertiesPanel.Name = "uiPropertiesPanel";
-            this.uiPropertiesPanel.Size = new System.Drawing.Size(196, 201);
+            this.uiPropertiesPanel.Size = new System.Drawing.Size(196, 213);
             this.uiPropertiesPanel.TabIndex = 0;
             // 
             // uiPropertyEditor
@@ -389,7 +389,7 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.uiPropertyEditor.LineColor = System.Drawing.SystemColors.ScrollBar;
             this.uiPropertyEditor.Location = new System.Drawing.Point(0, 0);
             this.uiPropertyEditor.Name = "uiPropertyEditor";
-            this.uiPropertyEditor.Size = new System.Drawing.Size(196, 201);
+            this.uiPropertyEditor.Size = new System.Drawing.Size(196, 213);
             this.uiPropertyEditor.TabIndex = 0;
             this.uiPropertyEditor.ToolbarVisible = false;
             // 
@@ -397,9 +397,9 @@ namespace iCodeGenerator.iCodeGeneratorGui
             // 
             this.uiCustomValuesDock.Controls.Add(this.uiCustomValuesDataGrid);
             this.uiCustomValuesDock.Guid = new System.Guid("efe8850a-621c-48c4-a603-1a963b397082");
-            this.uiCustomValuesDock.Location = new System.Drawing.Point(4, 264);
+            this.uiCustomValuesDock.Location = new System.Drawing.Point(4, 276);
             this.uiCustomValuesDock.Name = "uiCustomValuesDock";
-            this.uiCustomValuesDock.Size = new System.Drawing.Size(196, 202);
+            this.uiCustomValuesDock.Size = new System.Drawing.Size(196, 214);
             this.uiCustomValuesDock.TabIndex = 2;
             this.uiCustomValuesDock.Text = "Custom Values";
             this.uiCustomValuesDock.Leave += new System.EventHandler(this.uiCustomValuesDock_Leave);
@@ -414,7 +414,7 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.uiCustomValuesDataGrid.Name = "uiCustomValuesDataGrid";
             this.uiCustomValuesDataGrid.PreferredColumnWidth = 125;
             this.uiCustomValuesDataGrid.RowHeadersVisible = false;
-            this.uiCustomValuesDataGrid.Size = new System.Drawing.Size(196, 202);
+            this.uiCustomValuesDataGrid.Size = new System.Drawing.Size(196, 214);
             this.uiCustomValuesDataGrid.TabIndex = 0;
             this.uiCustomValuesDataGrid.TableStyles.AddRange(new System.Windows.Forms.DataGridTableStyle[] {
             this.uiCustomValuesGridStyle});
@@ -450,14 +450,14 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.rightSandDock.Dock = System.Windows.Forms.DockStyle.Right;
             this.rightSandDock.Guid = new System.Guid("5a7c170b-4aad-4827-bf24-de523a3bac08");
             this.rightSandDock.LayoutSystem = new TD.SandDock.SplitLayoutSystem(250, 400, System.Windows.Forms.Orientation.Horizontal, new TD.SandDock.LayoutSystemBase[] {
-            ((TD.SandDock.LayoutSystemBase)(new TD.SandDock.ControlLayoutSystem(196, 242, new TD.SandDock.DockControl[] {
+            ((TD.SandDock.LayoutSystemBase)(new TD.SandDock.ControlLayoutSystem(196, 254, new TD.SandDock.DockControl[] {
                         this.uiPropertiesDock}, this.uiPropertiesDock))),
-            ((TD.SandDock.LayoutSystemBase)(new TD.SandDock.ControlLayoutSystem(196, 242, new TD.SandDock.DockControl[] {
+            ((TD.SandDock.LayoutSystemBase)(new TD.SandDock.ControlLayoutSystem(196, 254, new TD.SandDock.DockControl[] {
                         this.uiCustomValuesDock}, this.uiCustomValuesDock)))});
             this.rightSandDock.Location = new System.Drawing.Point(586, 0);
             this.rightSandDock.Manager = this.uiSandDockManager;
             this.rightSandDock.Name = "rightSandDock";
-            this.rightSandDock.Size = new System.Drawing.Size(200, 489);
+            this.rightSandDock.Size = new System.Drawing.Size(200, 513);
             this.rightSandDock.TabIndex = 3;
             // 
             // bottomSandDock
@@ -465,7 +465,7 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.bottomSandDock.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.bottomSandDock.Guid = new System.Guid("864e047d-2a9d-4fba-bc18-f83754ae5214");
             this.bottomSandDock.LayoutSystem = new TD.SandDock.SplitLayoutSystem(250, 400);
-            this.bottomSandDock.Location = new System.Drawing.Point(0, 489);
+            this.bottomSandDock.Location = new System.Drawing.Point(0, 513);
             this.bottomSandDock.Manager = this.uiSandDockManager;
             this.bottomSandDock.Name = "bottomSandDock";
             this.bottomSandDock.Size = new System.Drawing.Size(786, 0);
@@ -489,13 +489,13 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.uiTemplateContainer.Cursor = System.Windows.Forms.Cursors.Default;
             this.uiTemplateContainer.Guid = new System.Guid("e2d7d100-338b-414b-a8f5-696d61a3348a");
             this.uiTemplateContainer.LayoutSystem = new TD.SandDock.SplitLayoutSystem(250, 400, System.Windows.Forms.Orientation.Horizontal, new TD.SandDock.LayoutSystemBase[] {
-            ((TD.SandDock.LayoutSystemBase)(new TD.SandDock.DocumentLayoutSystem(384, 487, new TD.SandDock.DockControl[] {
+            ((TD.SandDock.LayoutSystemBase)(new TD.SandDock.DocumentLayoutSystem(384, 511, new TD.SandDock.DockControl[] {
                         this.uiTemplateDock,
                         this.uiGenerateCodeDock}, this.uiTemplateDock)))});
             this.uiTemplateContainer.Location = new System.Drawing.Point(200, 0);
             this.uiTemplateContainer.Manager = null;
             this.uiTemplateContainer.Name = "uiTemplateContainer";
-            this.uiTemplateContainer.Size = new System.Drawing.Size(386, 489);
+            this.uiTemplateContainer.Size = new System.Drawing.Size(386, 513);
             this.uiTemplateContainer.TabIndex = 10;
             // 
             // uiTemplateDock
@@ -505,7 +505,7 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.uiTemplateDock.Guid = new System.Guid("6065db1e-e6bf-4209-8cb9-03c7805d045a");
             this.uiTemplateDock.Location = new System.Drawing.Point(3, 23);
             this.uiTemplateDock.Name = "uiTemplateDock";
-            this.uiTemplateDock.Size = new System.Drawing.Size(380, 463);
+            this.uiTemplateDock.Size = new System.Drawing.Size(380, 487);
             this.uiTemplateDock.TabIndex = 0;
             this.uiTemplateDock.Text = "Template";
             // 
@@ -516,7 +516,7 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.uiTemplateTextBox.Font = new System.Drawing.Font("Courier New", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.uiTemplateTextBox.Location = new System.Drawing.Point(0, 0);
             this.uiTemplateTextBox.Name = "uiTemplateTextBox";
-            this.uiTemplateTextBox.Size = new System.Drawing.Size(380, 463);
+            this.uiTemplateTextBox.Size = new System.Drawing.Size(380, 487);
             this.uiTemplateTextBox.TabIndex = 0;
             this.uiTemplateTextBox.Text = "";
             // 
@@ -702,8 +702,8 @@ namespace iCodeGenerator.iCodeGeneratorGui
             // 
             this.generatorToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.generateCodeToolStripMenuItem,
-            this.fileGeneratorConfigurationToolStripMenuItem,
             this.fileGenerateToolStripMenuItem,
+            this.fileGeneratorConfigurationToolStripMenuItem,
             this.openOutputFolderToolStripMenuItem});
             this.generatorToolStripMenuItem.Name = "generatorToolStripMenuItem";
             this.generatorToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
@@ -713,7 +713,7 @@ namespace iCodeGenerator.iCodeGeneratorGui
             // 
             this.generateCodeToolStripMenuItem.Name = "generateCodeToolStripMenuItem";
             this.generateCodeToolStripMenuItem.Size = new System.Drawing.Size(224, 22);
-            this.generateCodeToolStripMenuItem.Text = "Generate Code";
+            this.generateCodeToolStripMenuItem.Text = "(Generate Code)";
             this.generateCodeToolStripMenuItem.Click += new System.EventHandler(this.uiGenerateCodeButton_Activate);
             // 
             // fileGeneratorConfigurationToolStripMenuItem
@@ -748,7 +748,7 @@ namespace iCodeGenerator.iCodeGeneratorGui
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.uiAboutButton_Activate);
             // 
@@ -762,9 +762,10 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.viewToolStripMenuItem,
             this.generatorToolStripMenuItem,
             this.helpToolStripMenuItem});
-            this.uiMenuStrip.Location = new System.Drawing.Point(0, 0);
+            this.uiMenuStrip.Location = new System.Drawing.Point(3, 0);
             this.uiMenuStrip.Name = "uiMenuStrip";
-            this.uiMenuStrip.Size = new System.Drawing.Size(792, 24);
+            this.uiMenuStrip.Size = new System.Drawing.Size(247, 24);
+            this.uiMenuStrip.Stretch = false;
             this.uiMenuStrip.TabIndex = 1;
             this.uiMenuStrip.Text = "menuStrip1";
             // 
@@ -775,9 +776,9 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.tsGenerateCode,
             this.tsGenerateFile,
             this.tsGenerateMerge});
-            this.uiToolStrip.Location = new System.Drawing.Point(3, 24);
+            this.uiToolStrip.Location = new System.Drawing.Point(250, 0);
             this.uiToolStrip.Name = "uiToolStrip";
-            this.uiToolStrip.Size = new System.Drawing.Size(225, 25);
+            this.uiToolStrip.Size = new System.Drawing.Size(233, 25);
             this.uiToolStrip.TabIndex = 11;
             this.uiToolStrip.Text = "toolStrip1";
             // 
@@ -787,8 +788,8 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.tsGenerateCode.Image = ((System.Drawing.Image)(resources.GetObject("tsGenerateCode.Image")));
             this.tsGenerateCode.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.tsGenerateCode.Name = "tsGenerateCode";
-            this.tsGenerateCode.Size = new System.Drawing.Size(58, 22);
-            this.tsGenerateCode.Text = "Generate";
+            this.tsGenerateCode.Size = new System.Drawing.Size(66, 22);
+            this.tsGenerateCode.Text = "(Generate)";
             this.tsGenerateCode.Click += new System.EventHandler(this.uiGenerateButton_Activate);
             // 
             // tsGenerateFile
@@ -822,7 +823,7 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(786, 489);
+            this.panel1.Size = new System.Drawing.Size(786, 513);
             this.panel1.TabIndex = 12;
             // 
             // tableLayoutPanel1
@@ -838,7 +839,7 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(792, 495);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(792, 519);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
             // toolStripContainer1
@@ -851,7 +852,7 @@ namespace iCodeGenerator.iCodeGeneratorGui
             // toolStripContainer1.ContentPanel
             // 
             this.toolStripContainer1.ContentPanel.Controls.Add(this.tableLayoutPanel1);
-            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(792, 495);
+            this.toolStripContainer1.ContentPanel.Size = new System.Drawing.Size(792, 519);
             this.toolStripContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.toolStripContainer1.Location = new System.Drawing.Point(0, 0);
             this.toolStripContainer1.Name = "toolStripContainer1";
@@ -881,7 +882,7 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.uiMenuStrip;
             this.Name = "MainWindow";
-            this.Text = "iCode+Generator (MaKo-Port // GPL-Lizenziert!)";
+            this.Text = "iCode+Generator (MaKo | LGPL-licensed)";
             this.leftSandDock.ResumeLayout(false);
             this.uiNavigatorDock.ResumeLayout(false);
             this.uiPropertiesDock.ResumeLayout(false);

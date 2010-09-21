@@ -3,6 +3,7 @@ using Locom.Modules.Common.RecordSet;
 using System.Diagnostics;
 using System.Collections.ObjectModel;
 using System.Collections.Generic;
+using System.Linq;
 
 /*
 * $Header: /cvs/PlanIt/PlanItComponents/PlanItManager/ServiceAccess/Client.cs,v 1.5 2010/04/14 14:33:15 intranet+alexanderk Exp $

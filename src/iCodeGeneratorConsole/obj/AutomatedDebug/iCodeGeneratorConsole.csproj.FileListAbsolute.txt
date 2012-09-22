@@ -15,3 +15,9 @@ D:\SRC.own\codegenerator\build\Debug\iCodeGeneratorConsole\iCodeGeneratorConsole
 D:\SRC.own\codegenerator\src\iCodeGeneratorConsole\obj\AutomatedDebug\ResolveAssemblyReference.cache
 D:\SRC.own\codegenerator\src\iCodeGeneratorConsole\obj\AutomatedDebug\iCodeGeneratorConsole.exe
 D:\SRC.own\codegenerator\src\iCodeGeneratorConsole\obj\AutomatedDebug\iCodeGeneratorConsole.pdb
+C:\Users\marc\Desktop\iCodeGenerator\build\Debug\iCodeGeneratorConsole\DataTypeMapping.xml
+C:\Users\marc\Desktop\iCodeGenerator\build\Debug\iCodeGeneratorConsole\iCodeGeneratorConsole.exe
+C:\Users\marc\Desktop\iCodeGenerator\build\Debug\iCodeGeneratorConsole\iCodeGeneratorConsole.pdb
+C:\Users\marc\Desktop\iCodeGenerator\src\iCodeGeneratorConsole\obj\AutomatedDebug\iCodeGeneratorConsole.csprojResolveAssemblyReference.cache
+C:\Users\marc\Desktop\iCodeGenerator\src\iCodeGeneratorConsole\obj\AutomatedDebug\iCodeGeneratorConsole.exe
+C:\Users\marc\Desktop\iCodeGenerator\src\iCodeGeneratorConsole\obj\AutomatedDebug\iCodeGeneratorConsole.pdb

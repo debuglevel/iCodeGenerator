@@ -33,3 +33,15 @@ D:\SRC.own\codegenerator\src\iCodeGeneratorGui\obj\AutomatedDebug\iCodeGenerator
 D:\SRC.own\codegenerator\src\iCodeGeneratorGui\obj\AutomatedDebug\iCodeGenerator.iCodeGeneratorGui.Properties.Resources.resources
 D:\SRC.own\codegenerator\src\iCodeGeneratorGui\obj\AutomatedDebug\iCodeGenerator.iCodeGeneratorGui.UpdatesWindow.resources
 D:\SRC.own\codegenerator\src\iCodeGeneratorGui\obj\AutomatedDebug\iCodeGeneratorGui.csproj.GenerateResource.Cache
+C:\Users\marc\Desktop\iCodeGenerator\src\iCodeGeneratorGui\obj\AutomatedDebug\iCodeGeneratorGui.exe
+C:\Users\marc\Desktop\iCodeGenerator\src\iCodeGeneratorGui\obj\AutomatedDebug\iCodeGeneratorGui.pdb
+C:\Users\marc\Desktop\iCodeGenerator\build\Debug\iCodeGeneratorGui\DataTypeMapping.xml
+C:\Users\marc\Desktop\iCodeGenerator\build\Debug\iCodeGeneratorGui\iCodeGeneratorGui.exe
+C:\Users\marc\Desktop\iCodeGenerator\build\Debug\iCodeGeneratorGui\iCodeGeneratorGui.pdb
+C:\Users\marc\Desktop\iCodeGenerator\src\iCodeGeneratorGui\obj\AutomatedDebug\iCodeGeneratorGui.csprojResolveAssemblyReference.cache
+C:\Users\marc\Desktop\iCodeGenerator\src\iCodeGeneratorGui\obj\AutomatedDebug\iCodeGenerator.iCodeGeneratorGui.AboutWindow.resources
+C:\Users\marc\Desktop\iCodeGenerator\src\iCodeGeneratorGui\obj\AutomatedDebug\iCodeGenerator.iCodeGeneratorGui.DirectorySelectionWindow.resources
+C:\Users\marc\Desktop\iCodeGenerator\src\iCodeGeneratorGui\obj\AutomatedDebug\iCodeGenerator.iCodeGeneratorGui.MainWindow.resources
+C:\Users\marc\Desktop\iCodeGenerator\src\iCodeGeneratorGui\obj\AutomatedDebug\iCodeGenerator.iCodeGeneratorGui.Properties.Resources.resources
+C:\Users\marc\Desktop\iCodeGenerator\src\iCodeGeneratorGui\obj\AutomatedDebug\iCodeGenerator.iCodeGeneratorGui.UpdatesWindow.resources
+C:\Users\marc\Desktop\iCodeGenerator\src\iCodeGeneratorGui\obj\AutomatedDebug\iCodeGeneratorGui.csproj.GenerateResource.Cache

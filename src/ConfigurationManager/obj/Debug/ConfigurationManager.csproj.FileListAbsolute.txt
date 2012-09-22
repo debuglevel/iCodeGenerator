@@ -13,3 +13,8 @@ D:\SRC.own\codegenerator\src\ConfigurationManager\bin\Debug\iCodeGenerator.Confi
 D:\SRC.own\codegenerator\src\ConfigurationManager\obj\Debug\ResolveAssemblyReference.cache
 D:\SRC.own\codegenerator\src\ConfigurationManager\obj\Debug\iCodeGenerator.ConfigurationManager.dll
 D:\SRC.own\codegenerator\src\ConfigurationManager\obj\Debug\iCodeGenerator.ConfigurationManager.pdb
+C:\Users\marc\Desktop\iCodeGenerator\src\ConfigurationManager\bin\Debug\iCodeGenerator.ConfigurationManager.dll
+C:\Users\marc\Desktop\iCodeGenerator\src\ConfigurationManager\bin\Debug\iCodeGenerator.ConfigurationManager.pdb
+C:\Users\marc\Desktop\iCodeGenerator\src\ConfigurationManager\obj\Debug\ConfigurationManager.csprojResolveAssemblyReference.cache
+C:\Users\marc\Desktop\iCodeGenerator\src\ConfigurationManager\obj\Debug\iCodeGenerator.ConfigurationManager.dll
+C:\Users\marc\Desktop\iCodeGenerator\src\ConfigurationManager\obj\Debug\iCodeGenerator.ConfigurationManager.pdb

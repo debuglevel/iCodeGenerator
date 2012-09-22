@@ -13,3 +13,8 @@ D:\SRC.own\codegenerator\build\Debug\GenericDataAccess\iCodeGenerator.GenericDat
 D:\SRC.own\codegenerator\src\GenericDataAccess\obj\AutomatedDebug\ResolveAssemblyReference.cache
 D:\SRC.own\codegenerator\src\GenericDataAccess\obj\AutomatedDebug\iCodeGenerator.GenericDataAccess.dll
 D:\SRC.own\codegenerator\src\GenericDataAccess\obj\AutomatedDebug\iCodeGenerator.GenericDataAccess.pdb
+C:\Users\marc\Desktop\iCodeGenerator\build\Debug\GenericDataAccess\iCodeGenerator.GenericDataAccess.dll
+C:\Users\marc\Desktop\iCodeGenerator\build\Debug\GenericDataAccess\iCodeGenerator.GenericDataAccess.pdb
+C:\Users\marc\Desktop\iCodeGenerator\src\GenericDataAccess\obj\AutomatedDebug\GenericDataAccess.csprojResolveAssemblyReference.cache
+C:\Users\marc\Desktop\iCodeGenerator\src\GenericDataAccess\obj\AutomatedDebug\iCodeGenerator.GenericDataAccess.dll
+C:\Users\marc\Desktop\iCodeGenerator\src\GenericDataAccess\obj\AutomatedDebug\iCodeGenerator.GenericDataAccess.pdb

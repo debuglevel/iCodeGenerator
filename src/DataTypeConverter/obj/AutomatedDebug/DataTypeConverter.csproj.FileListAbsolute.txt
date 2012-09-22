@@ -15,3 +15,9 @@ D:\SRC.own\codegenerator\build\Debug\DataTypeConverter\iCodeGenerator.DataTypeCo
 D:\SRC.own\codegenerator\src\DataTypeConverter\obj\AutomatedDebug\ResolveAssemblyReference.cache
 D:\SRC.own\codegenerator\src\DataTypeConverter\obj\AutomatedDebug\iCodeGenerator.DataTypeConverter.dll
 D:\SRC.own\codegenerator\src\DataTypeConverter\obj\AutomatedDebug\iCodeGenerator.DataTypeConverter.pdb
+C:\Users\marc\Desktop\iCodeGenerator\build\Debug\DataTypeConverter\DataTypeMapping.xml
+C:\Users\marc\Desktop\iCodeGenerator\build\Debug\DataTypeConverter\iCodeGenerator.DataTypeConverter.dll
+C:\Users\marc\Desktop\iCodeGenerator\build\Debug\DataTypeConverter\iCodeGenerator.DataTypeConverter.pdb
+C:\Users\marc\Desktop\iCodeGenerator\src\DataTypeConverter\obj\AutomatedDebug\DataTypeConverter.csprojResolveAssemblyReference.cache
+C:\Users\marc\Desktop\iCodeGenerator\src\DataTypeConverter\obj\AutomatedDebug\iCodeGenerator.DataTypeConverter.dll
+C:\Users\marc\Desktop\iCodeGenerator\src\DataTypeConverter\obj\AutomatedDebug\iCodeGenerator.DataTypeConverter.pdb

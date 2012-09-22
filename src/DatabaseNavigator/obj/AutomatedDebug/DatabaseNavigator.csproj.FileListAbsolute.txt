@@ -22,3 +22,11 @@ D:\SRC.own\codegenerator\src\DatabaseNavigator\obj\AutomatedDebug\iCodeGenerator
 D:\SRC.own\codegenerator\src\DatabaseNavigator\obj\AutomatedDebug\DatabaseNavigator.csproj.GenerateResource.Cache
 D:\SRC.own\codegenerator\src\DatabaseNavigator\obj\AutomatedDebug\iCodeGenerator.DatabaseNavigator.dll
 D:\SRC.own\codegenerator\src\DatabaseNavigator\obj\AutomatedDebug\iCodeGenerator.DatabaseNavigator.pdb
+C:\Users\marc\Desktop\iCodeGenerator\build\Debug\DatabaseNavigator\iCodeGenerator.DatabaseNavigator.dll
+C:\Users\marc\Desktop\iCodeGenerator\build\Debug\DatabaseNavigator\iCodeGenerator.DatabaseNavigator.pdb
+C:\Users\marc\Desktop\iCodeGenerator\src\DatabaseNavigator\obj\AutomatedDebug\DatabaseNavigator.csprojResolveAssemblyReference.cache
+C:\Users\marc\Desktop\iCodeGenerator\src\DatabaseNavigator\obj\AutomatedDebug\iCodeGenerator.DatabaseNavigator.NavigatorControl.resources
+C:\Users\marc\Desktop\iCodeGenerator\src\DatabaseNavigator\obj\AutomatedDebug\iCodeGenerator.DatabaseNavigator.ServerSettingsForm.resources
+C:\Users\marc\Desktop\iCodeGenerator\src\DatabaseNavigator\obj\AutomatedDebug\DatabaseNavigator.csproj.GenerateResource.Cache
+C:\Users\marc\Desktop\iCodeGenerator\src\DatabaseNavigator\obj\AutomatedDebug\iCodeGenerator.DatabaseNavigator.dll
+C:\Users\marc\Desktop\iCodeGenerator\src\DatabaseNavigator\obj\AutomatedDebug\iCodeGenerator.DatabaseNavigator.pdb

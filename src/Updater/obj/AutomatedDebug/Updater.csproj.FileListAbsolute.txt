@@ -13,3 +13,7 @@ D:\SRC.own\codegenerator\src\Updater\bin\AutomatedDebug\iCodeGenerator.Updater.p
 D:\SRC.own\codegenerator\src\Updater\obj\AutomatedDebug\ResolveAssemblyReference.cache
 D:\SRC.own\codegenerator\src\Updater\obj\AutomatedDebug\iCodeGenerator.Updater.dll
 D:\SRC.own\codegenerator\src\Updater\obj\AutomatedDebug\iCodeGenerator.Updater.pdb
+C:\Users\marc\Desktop\iCodeGenerator\src\Updater\bin\AutomatedDebug\iCodeGenerator.Updater.dll
+C:\Users\marc\Desktop\iCodeGenerator\src\Updater\bin\AutomatedDebug\iCodeGenerator.Updater.pdb
+C:\Users\marc\Desktop\iCodeGenerator\src\Updater\obj\AutomatedDebug\iCodeGenerator.Updater.dll
+C:\Users\marc\Desktop\iCodeGenerator\src\Updater\obj\AutomatedDebug\iCodeGenerator.Updater.pdb

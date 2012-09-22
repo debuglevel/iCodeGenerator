@@ -25,8 +25,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseNavigator", "Databa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iCodeGeneratorGui", "iCodeGeneratorGui\iCodeGeneratorGui.csproj", "{0BA9AB83-7E8B-4E80-8A79-6F450AFD5336}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "iCodeGenerator", "iCodeGenerator\iCodeGenerator.vdproj", "{5DBE3ED1-DB1B-434A-9E1B-EA8361FF1462}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Updater", "Updater\Updater.csproj", "{CF78DCA4-978C-4AD4-A087-576926D6F075}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConfigurationManager", "ConfigurationManager\ConfigurationManager.csproj", "{602DADFC-CA31-40A3-A07A-620808DD83BD}"

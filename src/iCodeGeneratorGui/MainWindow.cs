@@ -13,9 +13,7 @@ using iCodeGenerator.DatabaseStructure;
 using iCodeGenerator.DataTypeConverter;
 using iCodeGenerator.Generator;
 using iCodeGenerator.Updater;
-//using TD.SandBar;
 using TD.SandDock;
-//using ToolBar=TD.SandBar.ToolBar;
 
 namespace iCodeGenerator.iCodeGeneratorGui
 {
@@ -23,7 +21,7 @@ namespace iCodeGenerator.iCodeGeneratorGui
 	{
 		#region Constants
 
-		public const string Version = "0.1.0";
+		public const string Version = "0.2.0";
 
 		#endregion
 
@@ -36,7 +34,6 @@ namespace iCodeGenerator.iCodeGeneratorGui
         private DockControl uiNavigatorDock;
 		private DocumentContainer uiTemplateContainer;
 		private SandDockManager uiSandDockManager;
-        //private SandBarManager uiSandBarManager;
 		private DockControl uiTemplateDock;
         private RichTextBox uiTemplateTextBox;
         private NavigatorControl uiNavigatorControl;
@@ -123,7 +120,7 @@ namespace iCodeGenerator.iCodeGeneratorGui
 
 		public MainWindow()
 		{
-			UpdateCheckerThread();
+			//UpdateCheckerThread();
 			InitializeComponent();
 			InitializeCustomValuesDataGrid();
 			LoadSnippets();
@@ -273,8 +270,8 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.customValuesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.generatorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.generateCodeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.fileGeneratorConfigurationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.fileGenerateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fileGeneratorConfigurationToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.openOutputFolderToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -348,11 +345,11 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.uiNavigatorControl.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.uiNavigatorControl.Size = new System.Drawing.Size(196, 472);
             this.uiNavigatorControl.TabIndex = 0;
+            this.uiNavigatorControl.ColumnSelect += new iCodeGenerator.DatabaseNavigator.NavigatorControl.ColumnEventHandler(this.uiNavigatorControl_ColumnSelect);
+            this.uiNavigatorControl.ColumnShowProperties += new iCodeGenerator.DatabaseNavigator.NavigatorControl.ColumnEventHandler(this.uiNavigatorControl_ColumnShowProperties);
             this.uiNavigatorControl.TableSelect += new iCodeGenerator.DatabaseNavigator.NavigatorControl.TableEventHandler(this.uiNavigatorControl_TableSelect);
             this.uiNavigatorControl.TablesSelect += new iCodeGenerator.DatabaseNavigator.NavigatorControl.TablesEventHandler(this.uiNavigatorControl_TablesSelect);
             this.uiNavigatorControl.DatabaseSelect += new iCodeGenerator.DatabaseNavigator.NavigatorControl.DatabaseEventHandler(this.uiNavigatorControl_DatabaseSelect);
-            this.uiNavigatorControl.ColumnSelect += new iCodeGenerator.DatabaseNavigator.NavigatorControl.ColumnEventHandler(this.uiNavigatorControl_ColumnSelect);
-            this.uiNavigatorControl.ColumnShowProperties += new iCodeGenerator.DatabaseNavigator.NavigatorControl.ColumnEventHandler(this.uiNavigatorControl_ColumnShowProperties);
             // 
             // uiSnippets
             // 
@@ -716,19 +713,19 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.generateCodeToolStripMenuItem.Text = "(Generate Code)";
             this.generateCodeToolStripMenuItem.Click += new System.EventHandler(this.uiGenerateCodeButton_Activate);
             // 
-            // fileGeneratorConfigurationToolStripMenuItem
-            // 
-            this.fileGeneratorConfigurationToolStripMenuItem.Name = "fileGeneratorConfigurationToolStripMenuItem";
-            this.fileGeneratorConfigurationToolStripMenuItem.Size = new System.Drawing.Size(224, 22);
-            this.fileGeneratorConfigurationToolStripMenuItem.Text = "File Generator Configuration";
-            this.fileGeneratorConfigurationToolStripMenuItem.Click += new System.EventHandler(this.uiFileGeneratorConfigButton_Activate);
-            // 
             // fileGenerateToolStripMenuItem
             // 
             this.fileGenerateToolStripMenuItem.Name = "fileGenerateToolStripMenuItem";
             this.fileGenerateToolStripMenuItem.Size = new System.Drawing.Size(224, 22);
             this.fileGenerateToolStripMenuItem.Text = "File Generate";
             this.fileGenerateToolStripMenuItem.Click += new System.EventHandler(this.uiFileGenerateButton_Activate);
+            // 
+            // fileGeneratorConfigurationToolStripMenuItem
+            // 
+            this.fileGeneratorConfigurationToolStripMenuItem.Name = "fileGeneratorConfigurationToolStripMenuItem";
+            this.fileGeneratorConfigurationToolStripMenuItem.Size = new System.Drawing.Size(224, 22);
+            this.fileGeneratorConfigurationToolStripMenuItem.Text = "File Generator Configuration";
+            this.fileGeneratorConfigurationToolStripMenuItem.Click += new System.EventHandler(this.uiFileGeneratorConfigButton_Activate);
             // 
             // openOutputFolderToolStripMenuItem
             // 
@@ -748,12 +745,13 @@ namespace iCodeGenerator.iCodeGeneratorGui
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.uiAboutButton_Activate);
             // 
             // uiMenuStrip
             // 
+            this.uiMenuStrip.BackColor = System.Drawing.SystemColors.Control;
             this.uiMenuStrip.Dock = System.Windows.Forms.DockStyle.None;
             this.uiMenuStrip.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible;
             this.uiMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -771,14 +769,15 @@ namespace iCodeGenerator.iCodeGeneratorGui
             // 
             // uiToolStrip
             // 
+            this.uiToolStrip.BackColor = System.Drawing.SystemColors.Control;
             this.uiToolStrip.Dock = System.Windows.Forms.DockStyle.None;
             this.uiToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsGenerateCode,
             this.tsGenerateFile,
             this.tsGenerateMerge});
-            this.uiToolStrip.Location = new System.Drawing.Point(250, 0);
+            this.uiToolStrip.Location = new System.Drawing.Point(283, 0);
             this.uiToolStrip.Name = "uiToolStrip";
-            this.uiToolStrip.Size = new System.Drawing.Size(233, 25);
+            this.uiToolStrip.Size = new System.Drawing.Size(264, 25);
             this.uiToolStrip.TabIndex = 11;
             this.uiToolStrip.Text = "toolStrip1";
             // 
@@ -862,8 +861,8 @@ namespace iCodeGenerator.iCodeGeneratorGui
             // 
             // toolStripContainer1.TopToolStripPanel
             // 
-            this.toolStripContainer1.TopToolStripPanel.Controls.Add(this.uiMenuStrip);
             this.toolStripContainer1.TopToolStripPanel.Controls.Add(this.uiToolStrip);
+            this.toolStripContainer1.TopToolStripPanel.Controls.Add(this.uiMenuStrip);
             // 
             // uiStatusStrip
             // 
@@ -882,7 +881,7 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.uiMenuStrip;
             this.Name = "MainWindow";
-            this.Text = "iCode+Generator (MaKo | LGPL-licensed)";
+            this.Text = "iCode+Generator";
             this.leftSandDock.ResumeLayout(false);
             this.uiNavigatorDock.ResumeLayout(false);
             this.uiPropertiesDock.ResumeLayout(false);
@@ -945,8 +944,6 @@ namespace iCodeGenerator.iCodeGeneratorGui
                                    table.Name + " & ";
             }
 
-
-            //uiPropertyEditor.SelectedObject = args.Table;
             uiPropertyEditor.SelectedObjects = args.Tables;
         }
 

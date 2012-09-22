@@ -98,10 +98,6 @@
     <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="SandBar">
-      <Name>SandBar</Name>
-      <HintPath>..\..\lib\SandBar\SandBar.dll</HintPath>
-    </Reference>
     <Reference Include="SandDock">
       <Name>SandDock</Name>
       <HintPath>..\..\lib\SandDock\SandDock.dll</HintPath>

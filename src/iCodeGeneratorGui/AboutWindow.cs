@@ -81,7 +81,7 @@ namespace iCodeGenerator.iCodeGeneratorGui
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(164, 31);
+            this.label3.Location = new System.Drawing.Point(180, 31);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(100, 23);
             this.label3.TabIndex = 2;
@@ -106,8 +106,8 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(164, 23);
             this.label1.TabIndex = 4;
-            this.label1.Text = "Author: Marc Kohaupt (LOCOM)";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.Text = "Author: Marc Kohaupt";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label4
             // 
@@ -115,7 +115,7 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(100, 23);
             this.label4.TabIndex = 5;
-            this.label4.Text = "2010";
+            this.label4.Text = "2010 && 2012";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // linkLabel1
@@ -125,7 +125,7 @@ namespace iCodeGenerator.iCodeGeneratorGui
             this.linkLabel1.Size = new System.Drawing.Size(232, 23);
             this.linkLabel1.TabIndex = 6;
             this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "http://github.com/garfield/iCodeGenerator";
+            this.linkLabel1.Text = "http://github.com/debuglevel/iCodeGenerator";
             this.linkLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.linkLabel1.VisitedLinkColor = System.Drawing.Color.Red;
             // 
@@ -180,5 +180,6 @@ namespace iCodeGenerator.iCodeGeneratorGui
 		{
 			this.Hide();
 		}
+
 	}
 }

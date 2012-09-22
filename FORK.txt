@@ -1,0 +1,4 @@
+This is a fork of the original iCode+Generator developed by victoryoalli
+The project homepage and SVN source is located at https://code.google.com/p/codegenerator/
+
+This fork was created because some third party controls did not work on my Windows 7. Furthermore, I added some small additional features.
